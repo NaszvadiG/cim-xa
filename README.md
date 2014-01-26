@@ -5,4 +5,4 @@ A distribution of the popular CodeIgniter framework. This distribution includes 
 
 Feel free to contact me through my website at the following URL:
 
-http://site-sthurber.rhcloud.com/
+http://tinyurl.com/dbmsmax
