@@ -1,4 +1,4 @@
-Ccim-xa
+cim-xa
 ======
 
 A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework. 
