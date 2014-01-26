@@ -1,8 +1,8 @@
 cim-xa
 ======
 
-A distribution of the popular CodeIgniter framework. This distribution includes modern alternative models and views. It will stand on the shoulders of some PHP giants. 
+A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework. This distribution includes modern alternative models and views. It will stand on the shoulders of some PHP giants. 
 
-Feel free to contact me through my website at the following URL:
+Feel free to contact Titanium Opensystems through the website at the following [shortened] URL:
 
-http://tinyurl.com/dbmsmax
+tinyurl.com/dbmsmax
