@@ -1,0 +1,2 @@
+savant license:
+@license http://www.gnu.org/copyleft/lesser.html LGPL
