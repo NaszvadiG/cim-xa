@@ -14,7 +14,7 @@ Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant)
 
 <a href="http://phpsavant.com/docs/">Documentation for Savant Templating</a>
 
-Paid support and development work is available from Titanium Opensystems -- see the <a href="//tinyurl.com/dbmsmax">website</a>.
+Paid support and development work is available from Titanium Opensystems -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
 This distribution is licensed on the same terms as CodeIgniter. 
 
@@ -26,7 +26,7 @@ IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP s
 
 USAGE:
 
-MODELS -- USING IDIORM ALONE OR IDIORM+PARIS: <a href="http://j4mie.github.io/idiormandparis/">See here</a>
+MODELS -- USING IDIORM ALONE OR IDIORM+PARIS: <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
 
 CONTROLLERS AND VIEWS:
