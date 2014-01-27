@@ -1,4 +1,4 @@
-paris and idiorm license:
+paris and idiorm license: 
 "Released under a BSD license."
 http://en.wikipedia.org/wiki/BSD_licenses
 see also:
