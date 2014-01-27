@@ -95,6 +95,4 @@ if (is_array($this->songs)): ?>
 
 ==============================================================
 
-MODELS -- USING IDIORM ALONE OR IDIORM+PARIS:
-
-<a href="http://j4mie.github.io/idiormandparis/">See here</a>
+MODELS -- USING IDIORM ALONE OR IDIORM+PARIS: <a href="http://j4mie.github.io/idiormandparis/">See here</a>
