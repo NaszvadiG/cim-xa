@@ -43,7 +43,7 @@ public function index()
 
 	$savant = new Savant3();
 	
-	$savant->addPath('template', '/templates');
+	$savant->addPath('template', './templates');
 
 // NO MODELS YET SO USING AN ARRAY
 
