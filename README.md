@@ -22,8 +22,9 @@ NOTES:
 This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE, 
 and 2-index_page is set to: ' ' to support URLs without showing index.php. 
 If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
+IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
-HOWTO:
+USAGE:
 
 MODELS -- USING IDIORM ALONE OR IDIORM+PARIS: <a href="http://j4mie.github.io/idiormandparis/">See here</a>
 
