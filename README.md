@@ -24,13 +24,11 @@ and 2-index_page is set to: ' ' to support URLs without showing index.php.
 If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
 
 
-
-
+<div style="height:20px;"> </div>
 MODELS -- USING IDIORM ALONE OR IDIORM+PARIS: <a href="http://j4mie.github.io/idiormandparis/">See here</a>
 
 
-
-
+<div style="height:20px;"> </div>
 CONTROLLERS AND VIEWS:
 
 EXAMPLE OF CONTROLLER [Savant only, no database]
@@ -103,4 +101,4 @@ if (is_array($this->songs)): ?>
 	
 <?php endif; ?>
 
-//END
+
