@@ -10,7 +10,7 @@ Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant)
 
 <a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a>
 
-<a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record Add-on for Idiorm</a>
+<a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record Optional Add-on for Idiorm</a>
 
 <a href="http://phpsavant.com/docs/">Documentation for Savant Templating</a>
 
@@ -31,11 +31,11 @@ public function index()
 
 {
 
-	require_once '/idiorm/idiorm.php';
-
 	require_once '/savant/Savant3.php';
 
 	$savant = new Savant3();
+	
+	$savant->addPath('template', '/templates');
 
 // NO MODELS YET SO USING AN ARRAY
 
@@ -51,7 +51,7 @@ public function index()
 	
 	$savant->songs = $data;
 	
-	$savant->display('/templates/songs.tpl.php');
+	$savant->display('songs.tpl.php');
 	
 } 
     		
