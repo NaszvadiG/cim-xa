@@ -17,3 +17,54 @@ Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant)
 Paid support and development work is available from Titanium Opensystems -- see the <a href="//tinyurl.com/dbmsmax">website</a>.
 
 This distribution is licensed on the same terms as CodeIgniter. 
+
+NOTES:
+This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE, 
+and 2-index_page is set to: ' ' to support URLs without showing index.php. 
+If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
+
+EXAMPLE OF CONTROLLER [Savant only, no database]
+<?php
+public function index()
+{
+	require_once '/idiorm/idiorm.php';
+	require_once '/savant/Savant3.php';
+	$savant = new Savant3();
+// NO MODELS YET SO USING AN ARRAY
+	$data = array(
+		array(
+			'artist' => 'Artist 1',
+			'title' => 'Song 1'
+		),
+		array(
+			'artist' => 'Artist 2',
+			'title' => 'Song 2'
+		),
+		array(
+			'artist' => 'Artist 3',
+			'title' => 'Song 3'
+		)
+	);
+	$savant->songs = $data;
+	$savant->display('/templates/songs.tpl.php');
+}     		
+?>
+
+EXAMPLE OF VIEW/TEMPLATE [Savant only, no database]
+<?php 
+if (is_array($this->songs)): ?>
+	<table>
+	<tr>
+		<th>Artist</th>
+		<th>Title</th>
+	</tr>
+	<?php foreach ($this->songs as $key => $val): ?>
+	<tr>
+		<td><?php echo $this->eprint($val['artist']); ?></td>
+		<td><?php echo $this->eprint($val['title']); ?></td>
+	</tr>
+	<?php endforeach; ?>
+	</table>
+<?php else: ?>
+	<p>No songs found.</p>
+<?php endif; ?>
