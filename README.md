@@ -36,9 +36,9 @@ THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php with a re
 
 SAMPLE CONTROLLER CODE USING SAVANT WITH IDIORM [WITHOUT THE PARIS ADD-ON]:
 
-$savant = new Savant3();
+$query = new Savant3();
 
-$savant->songs = ORM::for_table('songs') ->order_by_asc('artist') ->find_many();
+$query->songs = ORM::for_table('songs') ->order_by_asc('artist') ->find_many();
 			
-$savant->display('songs.php');
+$query->display('songs.php');
  
