@@ -17,7 +17,8 @@ and see also <a href="http://devzone.zend.com/1542/creating-modular-template-bas
 
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
-This distribution is licensed as a compilation work under the same terms as CodeIgniter. 
+This distribution is licensed as a compilation work under the same terms as set forth in 
+<href="http://ellislab.com/codeigniter/user-guide/license.html">the CodeIgniter License</a>.
 
 NOTES:
 This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE; 
