@@ -38,37 +38,32 @@ EXAMPLE OF CONTROLLER [Savant only, no database]
 
 <?php
 
-public function index()
-
-{
-
-	require_once '/savant/Savant3.php';
-
-	$savant = new Savant3();
-	
-	$savant->addPath('template', './application/templates');
-
-// NO DB&MODELS HERE SO USING AN ARRAY
-
-	$data = array(
-
-		array('artist' => 'Artist 1','title' => 'Song 1'),
+	public function index()
+    {
+		require_once '/savant/Savant3.php';
 		
-		array('artist' => 'Artist 2','title' => 'Song 2'),
+		$savant = new Savant3();
 		
-		array('artist' => 'Artist 3','title' => 'Song 3')
+		$savant->addPath('template', './application/templates');
 		
-	);
-	
-	$savant->songs = $data;
-	
-	$savant->display('songs.php');
-	
-} 
+		require_once '/idiorm/idiorm.php';
+		
+		$savant->songs = ORM::for_table('songs')
+		
+			->select_many('artist', 'title')
+			
+            ->where_raw('(`time` > ? AND `time` < ?)', array(2, 5))
+			
+            ->order_by_asc('artist')
+			
+            ->find_many();
+			
+		$savant->display('songs.php');
+    }     
     		
 ?>
 
-EXAMPLE OF VIEW/TEMPLATE [Savant only, no database]
+EXAMPLE OF VIEW/TEMPLATE 
 
 <?php 
 
