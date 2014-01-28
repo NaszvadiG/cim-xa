@@ -29,12 +29,12 @@ IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP s
 
 USAGE:
 
-MODELS -- USING IDIORM ALONE OR IDIORM+PARIS: <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
+USE IDIORM ALONE OR IDIORM+PARIS?: <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
 
-CONTROLLERS AND VIEWS:
+CONTROLLER AND VIEW WITH IDIORM AND SAVANT:
 
-EXAMPLE OF CONTROLLER [Savant only, no database]
+EXAMPLE CONTROLLER
 
 <?php
 
@@ -43,8 +43,6 @@ EXAMPLE OF CONTROLLER [Savant only, no database]
 		require_once '/savant/Savant3.php';
 		
 		$savant = new Savant3();
-		
-		$savant->addPath('template', './application/templates');
 		
 		require_once '/idiorm/idiorm.php';
 		
@@ -63,40 +61,29 @@ EXAMPLE OF CONTROLLER [Savant only, no database]
     		
 ?>
 
-EXAMPLE OF VIEW/TEMPLATE 
+EXAMPLE VIEW/TEMPLATE 
 
-<?php 
+<table>
 
-if (is_array($this->songs)): ?>
+<tr>
 
-	<table>
+	<th>Artist</th>
 	
+	<th>Title</th>
+	
+</tr>
+
+<?php foreach ($this->songs as $key => $val): ?>
+
 	<tr>
-	
-		<th>Artist</th>
-		
-		<th>Title</th>
-		
-	</tr>
-	
-	<?php foreach ($this->songs as $key => $val): ?>
-	
-	<tr>
-	
+
 		<td><?php echo $this->eprint($val['artist']); ?></td>
 		
 		<td><?php echo $this->eprint($val['title']); ?></td>
 		
 	</tr>
-	
-	<?php endforeach; ?>
-	
-	</table>
-	
-<?php else: ?>
 
-	<p>No songs found.</p>
-	
-<?php endif; ?>
+<?php endforeach; ?>
 
+</table>
 
