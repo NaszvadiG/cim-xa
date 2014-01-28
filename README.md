@@ -10,7 +10,7 @@ Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant)
 
 <a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a>
 
-<a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record Optional Add-on for Idiorm</a>
+<a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record [Optional] Add-on for Idiorm</a>
 
 <a href="http://phpsavant.com/docs/">Documentation for Savant Templating</a>;  
 see also: <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>.
@@ -28,9 +28,9 @@ in that it has the default path to templates set to application/templates.
 IMPORTANT: If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
-USE IDIORM ALONE OR IDIORM+PARIS?: <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
+SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
-SAMPLE CONTROLLER CODE USING IDIORM WITH SAVANT:
+SAMPLE CONTROLLER CODE USING IDIORM [WITHOUT PARIS] WITH SAVANT:
 
 require_once '/savant/Savant3.php';
 
