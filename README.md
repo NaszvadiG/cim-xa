@@ -12,7 +12,8 @@ Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant)
 
 <a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record Optional Add-on for Idiorm</a>
 
-<a href="http://phpsavant.com/docs/">Documentation for Savant Templating</a>
+<a href="http://phpsavant.com/docs/">Documentation for Savant Templating</a> 
+and see also <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>.
 
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
