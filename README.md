@@ -4,7 +4,7 @@ cim-xa
 A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework. 
 This distribution includes modern alternative object-oriented models and views and currently supports SQLite, MySQL, and PostgreSQL.
 It stands on the shoulders of some PHP giants:  
-Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant), and others. 
+Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant), Zend(Zend libraries), and others. 
 
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
 
@@ -14,13 +14,14 @@ Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant)
 
 <a href="http://phpsavant.com/docs/">Documentation for Savant Templating</a>
 
-Paid support and development work is available from Titanium Opensystems -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
+Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
-This distribution is licensed on the same terms as CodeIgniter. 
+This distribution is licensed as a compilation work under the same terms as CodeIgniter. 
 
 NOTES:
-This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE, 
-and 2-index_page is set to: ' ' to support URLs without showing index.php. 
+This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE; 
+2-index_page is set to: ' ' to support URLs without showing index.php; libraries have been added to the include path so the 
+Zend libraries may be used easily [e.g.: require("Zend/Feed/Rss.php");]. 
 If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
