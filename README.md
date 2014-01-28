@@ -12,13 +12,13 @@ Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant)
 
 <a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record Optional Add-on for Idiorm</a>
 
-<a href="http://phpsavant.com/docs/">Documentation for Savant Templating</a> 
-and see also <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>.
+<a href="http://phpsavant.com/docs/">Documentation for Savant Templating</a>;  
+see also: <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>.
 
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
 This distribution is licensed as a compilation work under the same terms as set forth in 
-<href="http://ellislab.com/codeigniter/user-guide/license.html">the CodeIgniter License</a>.
+<a href="http://ellislab.com/codeigniter/user-guide/license.html">the CodeIgniter License</a>.
 
 NOTES:
 This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE; 
