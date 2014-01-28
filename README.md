@@ -30,26 +30,16 @@ IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP s
 
 USE IDIORM ALONE OR IDIORM+PARIS?: <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
-EXAMPLE CONTROLLER USING IDIORM WITH SAVANT
+EXAMPLE CONTROLLER CODE USING IDIORM WITH SAVANT:
 
-public function index() {
+require_once '/savant/Savant3.php';
 
-		require_once '/savant/Savant3.php';
-		
-		require_once '/idiorm/idiorm.php';
-		
-		$savant = new Savant3();
-		
-		$savant->songs = ORM::for_table('songs')
-		
-			->select_many('artist', 'title')
+require_once '/idiorm/idiorm.php';
+
+$savant = new Savant3();
+
+$savant->songs = ORM::for_table('songs') ->order_by_asc('artist') ->find_many();
 			
-            ->where_raw('(`time` > ? AND `time` < ?)', array(2, 5))
-			
-            ->order_by_asc('artist')
-			
-            ->find_many();
-			
-		$savant->display('songs.php');
- }     
+$savant->display('songs.php');
+   
  
