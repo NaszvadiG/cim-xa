@@ -23,7 +23,8 @@ This distribution is licensed as a compilation work under the same terms as set 
 NOTES:
 This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE; 
 2-index_page is set to: ' ' to support URLs without showing index.php; libraries have been added to the include path so the 
-Zend libraries may be used easily [e.g.: require("Zend/Feed/Rss.php");]. 
+Zend libraries may be used easily [e.g.: require("Zend/Feed/Rss.php");]. This distribution's Savant departs from the original 
+in that it has the default path to templates set to application/templates.
 If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
@@ -42,9 +43,9 @@ EXAMPLE CONTROLLER
     {
 		require_once '/savant/Savant3.php';
 		
-		$savant = new Savant3();
-		
 		require_once '/idiorm/idiorm.php';
+		
+		$savant = new Savant3();
 		
 		$savant->songs = ORM::for_table('songs')
 		

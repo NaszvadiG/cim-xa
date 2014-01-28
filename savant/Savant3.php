@@ -105,7 +105,7 @@ class Savant3 {
 		} else {
 			// no directories set, use the
 			// default directory only
-			$this->setPath('template', null);
+			$this->setPath('template', './application/templates');
 		}
 		
 		// set the default resource search path
