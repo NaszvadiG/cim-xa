@@ -25,66 +25,26 @@ This distribution's configuration for CodeIgniter departs from the original as f
 2-index_page is set to: ' ' to support URLs without showing index.php; libraries have been added to the include path so the 
 Zend libraries may be used easily [e.g.: require("Zend/Feed/Rss.php");]. This distribution's Savant departs from the original 
 in that it has the default path to templates set to application/templates.
-If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
+IMPORTANT: If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
-
-USAGE:
 
 USE IDIORM ALONE OR IDIORM+PARIS?: <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
-
-CONTROLLER AND VIEW WITH IDIORM AND SAVANT:
-
-EXAMPLE CONTROLLER
+EXAMPLE CONTROLLER USING IDIORM WITH SAVANT
 
 <?php
-
 	public function index()
     {
 		require_once '/savant/Savant3.php';
-		
 		require_once '/idiorm/idiorm.php';
-		
 		$savant = new Savant3();
-		
 		$savant->songs = ORM::for_table('songs')
-		
 			->select_many('artist', 'title')
-			
             ->where_raw('(`time` > ? AND `time` < ?)', array(2, 5))
-			
             ->order_by_asc('artist')
-			
             ->find_many();
-			
 		$savant->display('songs.php');
-    }     
-    		
+    }   		
 ?>
 
-EXAMPLE VIEW/TEMPLATE 
-
-<table>
-
-<tr>
-
-	<th>Artist</th>
-	
-	<th>Title</th>
-	
-</tr>
-
-<?php foreach ($this->songs as $key => $val): ?>
-
-	<tr>
-
-		<td><?php echo $this->eprint($val['artist']); ?></td>
-		
-		<td><?php echo $this->eprint($val['title']); ?></td>
-		
-	</tr>
-
-<?php endforeach; ?>
-
-</table>
 
