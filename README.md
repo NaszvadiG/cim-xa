@@ -48,7 +48,7 @@ public function index()
 	
 	$savant->addPath('template', './application/templates');
 
-// NO MODELS YET SO USING AN ARRAY
+// NO DB&MODELS HERE SO USING AN ARRAY
 
 	$data = array(
 
