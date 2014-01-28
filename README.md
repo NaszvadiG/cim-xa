@@ -42,16 +42,3 @@ $savant->songs = ORM::for_table('songs') ->order_by_asc('artist') ->find_many();
 			
 $savant->display('songs.php');
    
-SAMPLE VIEW CODE USING SAVANT:
- 
-<table>
-
-<?php foreach ($this->songs as $key => $val): ?><tr>
-
-	<td>ARTIST:</td><td><?php echo $this->eprint($val['artist']); ?></td>
-	
-	<td>TITLE:</td><td><?php echo $this->eprint($val['title']); ?></td>
-	
-</tr><?php endforeach; ?>
-
-</table>
