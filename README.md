@@ -30,7 +30,7 @@ IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP s
 
 SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
-SAMPLE CONTROLLER CODE USING IDIORM [WITHOUT PARIS] WITH SAVANT:
+SAMPLE CONTROLLER CODE USING SAVANT WITH IDIORM [WITHOUT THE PARIS ADD-ON]:
 
 require_once '/savant/Savant3.php';
 
