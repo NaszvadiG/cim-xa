@@ -12,8 +12,11 @@ Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant)
 
 <a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record [Optional] Add-on for Idiorm</a>
 
-<a href="http://phpsavant.com/docs/">Documentation for Savant Templating</a>;  
-see also: <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>.
+<a href="http://phpsavant.com/docs/">Documentation for [optional] Savant Templating</a>;  
+see also: <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
+While Savant is included in this distribution, it is not mandatory to use Savant for view -- CodeIgniter views may be used. 
+The sample code application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
+in the usual directory.
 
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
@@ -36,9 +39,9 @@ THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php with a re
 
 SAMPLE CONTROLLER CODE USING SAVANT WITH IDIORM [WITHOUT THE PARIS ADD-ON]:
 
-$query = new Savant3();
+$data = new Savant3();
 
-$query->songs = ORM::for_table('songs') ->order_by_asc('artist') ->find_many();
+$data->songs = ORM::for_table('songs') ->order_by_asc('artist') ->find_many();
 			
-$query->display('songs.php');
+$data->display('songs.php');
  
