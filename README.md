@@ -2,7 +2,8 @@ CIM-XA
 ======
 
 A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework. 
-This distribution includes modern alternative object-oriented models and views and currently supports SQLite, MySQL, and PostgreSQL.
+This distribution includes modern alternative object-oriented data and presentation layers [CodeIgniter views remain usable if desired] 
+and it currently supports SQLite, MySQL, and PostgreSQL.
 It stands on the shoulders of some PHP giants:  
 Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant), Zend(Zend libraries), and others. 
 
