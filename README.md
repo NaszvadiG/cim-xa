@@ -2,9 +2,10 @@ CIM-XA
 ======
 
 A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework. 
-This distribution includes modern alternative object-oriented data and presentation layers [CodeIgniter views remain usable if desired] 
-and it currently supports SQLite, MySQL, and PostgreSQL.
-It stands on the shoulders of some PHP giants:  
+This distribution includes modern alternative object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
+supports SQLite, MySQL, and PostgreSQL [all through PDO] and includes the Zend libraries [auth, mail, paginator, permissions, serialzer, 
+etc.] 
+This distribution stands on the shoulders of some PHP giants:  
 Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant), Zend(Zend libraries), and others. 
 
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
@@ -22,7 +23,9 @@ in the usual directory.
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
 This distribution is licensed as a compilation work under the same terms as set forth in 
-<a href="http://ellislab.com/codeigniter/user-guide/license.html">the CodeIgniter License</a>.
+<a href="http://ellislab.com/codeigniter/user-guide/license.html">the CodeIgniter License</a>. The individual components are subject to their 
+respective licenses. All trademarks are the property of their respective owners and Titanium Opensystems has no affiliation with any of them. 
+By using this distribution in whole or part you consent to all applicable license terms.
 
 NOTES:
 This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE; 
