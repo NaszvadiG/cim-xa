@@ -190,9 +190,7 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
-// add to include path to find zend stuff
-		ini_set('include_path',
-		ini_get('include_path') . PATH_SEPARATOR . APPPATH . 'libraries');
+
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE

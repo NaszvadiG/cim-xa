@@ -1,23 +1,25 @@
 CIM-XA
 ======
 
-A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework. 
+A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework, with many enhancements. 
 This distribution includes modern alternative object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
-supports SQLite, MySQL, and PostgreSQL [all through PDO] and includes the Zend libraries [auth, mail, paginator, permissions, serialzer, 
-etc.] 
-This distribution stands on the shoulders of some PHP giants:  
+supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Zend libraries 
+[auth, mail, permissions, serialzer, etc.], loadable and usable as if they were CodeIgniter libraries. 
+This distribution therefore stands on the shoulders of some PHP giants:  
 Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant), Zend(Zend libraries), and others. 
 
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
 
 <a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a>
 
-<a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record [Optional] Add-on for Idiorm</a>
+<a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record [Optional] Add-on for Idiorm</a> While 
+Paris is included in this distribution it is not necessary to use for the database layer--it merely provides an alternative 
+abstraction. The sample code in application/controllers/songs.php uses Idiorm only.
 
 <a href="http://phpsavant.com/docs/">Documentation for [optional] Savant Templating</a>;  
 see also: <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
-While Savant is included in this distribution, it is not mandatory to use Savant for view -- CodeIgniter views may be used. 
-The sample code application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
+While Savant is included in this distribution, it is not mandatory to use Savant for presentation -- CodeIgniter views may be used. 
+The sample code in application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
 in the usual directory.
 
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
