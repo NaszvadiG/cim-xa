@@ -6,7 +6,7 @@ for cross-DBMS compatibility or HipHopVM [HHVM] compatibility? or options for js
 or support for prepared statements? Perhaps you simply prefer a more mainstream ORM approach? Perhaps you need a quick CRUD system? 
 This distribution includes modern alternative object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD] and Zend libraries 
-[auth, mail, permissions, serialzer, etc.], loadable and usable as if they were CodeIgniter libraries. 
+[auth, mail, permissions, serialzer, etc., loadable and usable as if they were CodeIgniter libraries]. 
 This distribution therefore stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
 Paul M. Jones (Savant), Zend(Zend libraries), and others. 
 
@@ -38,7 +38,8 @@ This distribution's configuration for CodeIgniter departs from the original as f
 in that it assumes the path to templates set to application/templates and the sample code reflects this assumption. 
 A database connection string configuration for Idiorm is located in application/config/idiorm.php which you may include in your 
 controller constructor, otherwise Idiom expects it coded inline. This string must reflect your database server attributes as 
-described in the Idiorm documentation. IMPORTANT: If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
+described in the Idiorm documentation. To use Grocery CRUD requires defining CodeIgniter's database connection in 
+application/config/database.php. IMPORTANT: If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
 THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of both Savant and CodeIgniter view usage.
