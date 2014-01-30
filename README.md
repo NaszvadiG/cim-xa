@@ -1,7 +1,7 @@
 CIM-Accelerant [the distribution formerly known as CIM-XA]
 =========================================================
 
-A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework, with many enhancements. Perhaps you need PDO 
+A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. Perhaps you need PDO 
 for cross-DBMS compatibility or HipHopVM [HHVM] compatibility? or options for json serialization? or HTML email? or login/authorization? 
 or support for prepared statements? Perhaps you simply prefer a more mainstream ORM approach? 
 This distribution includes modern alternative object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
