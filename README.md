@@ -7,8 +7,8 @@ or support for prepared statements? Perhaps you simply prefer a more mainstream 
 This distribution includes modern alternative object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Zend libraries 
 [auth, mail, permissions, serialzer, etc.], loadable and usable as if they were CodeIgniter libraries. 
-This distribution therefore stands on the shoulders of some PHP giants:  
-Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant), Zend(Zend libraries), and others. 
+This distribution therefore stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
+Paul M. Jones (Savant), Zend(Zend libraries), and others. 
 
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
 
