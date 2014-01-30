@@ -29,7 +29,16 @@ public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER V
 		->orderByAsc('artist') 
 		->findResultSet();
 	$this->load->view('songs2.php', $data); // CODEIGNITER VIEW
-}     		
+}
+
+public function songs3() // USES GROCERYCRUD AND CODEIGNITER DATABASE INTERFACE
+    {
+        $this->load->database(); 
+        $this->load->library('grocery_CRUD');
+		$songs3 = new grocery_CRUD();  
+		$songs3->set_table('songs');  
+        $this->load->view('songs3.php', $songs3->render());  
+}			
  
 } // END CLASS
 

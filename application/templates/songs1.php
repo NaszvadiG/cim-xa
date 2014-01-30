@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 </head>
+<body>
+<!-- SAVANT PRESENTATION LAYER -->
 <table>
 <?php foreach ($this->songs as $key=>$song): ?>
 <tr>
@@ -11,3 +13,4 @@
 </tr>
 <?php endforeach; ?>
 </table>
+</body>
