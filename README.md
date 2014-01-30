@@ -8,7 +8,7 @@ This distribution includes modern alternative object-oriented data and presentat
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD] and Zend libraries 
 [auth, mail, permissions, serialzer, etc., loadable and usable as if they were CodeIgniter libraries]. 
 This distribution therefore stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
-Paul M. Jones (Savant), Zend(Zend libraries), and others. 
+Paul M. Jones (Savant), Zend(Zend libraries), Adam Shaw (phpti) and others. 
 
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
 
@@ -24,6 +24,8 @@ SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idior
 While Savant is included in this distribution, it is not mandatory to use Savant for presentation -- CodeIgniter views may be used. 
 The sample code in application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
 in the usual directory.
+
+<a href="http://phpti.com/">PHPTI Template Inheritance Site</a>.
 
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
