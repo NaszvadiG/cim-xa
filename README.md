@@ -1,7 +1,9 @@
-CIM-XA
-======
+CI-Accelerant [the distribution formerly known as CIM-XA]
+=========================================================
 
-A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework, with many enhancements. 
+A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework, with many enhancements. Perhaps you need PDO 
+for cross-DBMS compatibility or HipHopVM [HHVM] compatibility? or options for json serialization? or HTML email? or login/authorization? 
+or support for prepared statements? Perhaps you simply prefer a more mainstream ORM approach? 
 This distribution includes modern alternative object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Zend libraries 
 [auth, mail, permissions, serialzer, etc.], loadable and usable as if they were CodeIgniter libraries. 
@@ -41,13 +43,7 @@ IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP s
 
 SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
-THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php with a related view in application/templates/songs.php
+THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of both Savant and CodeIgniter view usage.
 
-SAMPLE CONTROLLER CODE USING SAVANT WITH IDIORM [WITHOUT THE PARIS ADD-ON]:
 
-$data = new Savant3();
-
-$data->songs = ORM::for_table('songs') ->order_by_asc('artist') ->find_many();
-			
-$data->display('songs.php');
  
