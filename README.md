@@ -1,11 +1,11 @@
-CIM-Accelerant [the distribution formerly known as CIM-XA]
+CIM-Accelerant [a.k.a. CIM-XA]
 =========================================================
 
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. Perhaps you need PDO 
 for cross-DBMS compatibility or HipHopVM [HHVM] compatibility? or options for json serialization? or HTML email? or login/authorization? 
 or support for prepared statements? Perhaps you simply prefer a more mainstream ORM approach? Perhaps you need a quick CRUD system? 
 This distribution includes modern alternative object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
-supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery CRUD and Zend libraries 
+supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD] and Zend libraries 
 [auth, mail, permissions, serialzer, etc.], loadable and usable as if they were CodeIgniter libraries. 
 This distribution therefore stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
 Paul M. Jones (Savant), Zend(Zend libraries), and others. 
