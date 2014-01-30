@@ -17,6 +17,7 @@ Paul M. Jones (Savant), Zend(Zend libraries), and others.
 <a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record [Optional] Add-on for Idiorm</a> While 
 Paris is included in this distribution it is not necessary to use for the database layer--it merely provides an alternative 
 abstraction. The sample code in application/controllers/songs.php uses Idiorm only.
+SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
 <a href="http://phpsavant.com/docs/">Documentation for [optional] Savant Templating</a> and see also: 
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
@@ -39,8 +40,6 @@ A database connection string configuration for Idiorm is located in application/
 controller constructor, otherwise Idiom expects it coded inline. This string must reflect your database server attributes as 
 described in the Idiorm documentation. IMPORTANT: If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
-
-SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
 THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of both Savant and CodeIgniter view usage.
 
