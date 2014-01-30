@@ -39,7 +39,7 @@ in that it assumes the path to templates set to application/templates and the sa
 A database connection string configuration for Idiorm is located in application/config/idiorm.php which you may include in your 
 controller constructor, otherwise Idiom expects it coded inline. This string must reflect your database server attributes as 
 described in the Idiorm documentation. To use Grocery CRUD requires defining CodeIgniter's database connection in 
-application/config/database.php. IMPORTANT: If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
+application/config/database.php. IMPORTANT: If sessions are needed then PHP or Zend sessions should be used instead of CodeIgniter's. 
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
 THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of both Savant and CodeIgniter view usage.
