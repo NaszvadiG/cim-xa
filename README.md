@@ -1,4 +1,4 @@
-CI-Accelerant [the distribution formerly known as CIM-XA]
+CIM-Accelerant [the distribution formerly known as CIM-XA]
 =========================================================
 
 A distribution, by Titanium Opensystems, l.c., of the popular CodeIgniter framework, with many enhancements. Perhaps you need PDO 
