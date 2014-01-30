@@ -18,8 +18,8 @@ Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), Paul M. Jones (Savant)
 Paris is included in this distribution it is not necessary to use for the database layer--it merely provides an alternative 
 abstraction. The sample code in application/controllers/songs.php uses Idiorm only.
 
-<a href="http://phpsavant.com/docs/">Documentation for [optional] Savant Templating</a>;  
-see also: <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
+<a href="http://phpsavant.com/docs/">Documentation for [optional] Savant Templating</a>; see also:  
+<a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
 While Savant is included in this distribution, it is not mandatory to use Savant for presentation -- CodeIgniter views may be used. 
 The sample code in application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
 in the usual directory.
