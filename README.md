@@ -32,13 +32,12 @@ RESPECTIVE LICENSES. ALL TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE OWNERS 
 BY USING THIS DISTRIBUTION IN WHOLE OR PART YOU CONSENT TO ALL APPLICABLE LICENSE TERMS, INCLUDING WITHOUT LIMITATION, THIS PARAGRAPH.
 
 NOTES:
-This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE; 
-2-index_page is set to: ' ' to support URLs without showing index.php; libraries have been added to the include path so the 
-Zend libraries may be used easily [e.g.: require("Zend/Feed/Rss.php");]. This distribution's Savant departs from the original 
-in that it has the default path to templates set to application/templates. A database connection string configuration for 
-Idiorm is located in application/config/idiorm.php which you may include in your controller constructor, otherwise Idiom will 
-need it coded inline. This string must reflect your database server attributes as described in the Idiorm documentation. 
-IMPORTANT: If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
+This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE and 
+2-index_page is set to: ' ' to support URLs without showing index.php. This distribution's Savant departs from the original 
+in that it assumes the path to templates set to application/templates and the sample code reflects this assumption. 
+A database connection string configuration for Idiorm is located in application/config/idiorm.php which you may include in your 
+controller constructor, otherwise Idiom expects it coded inline. This string must reflect your database server attributes as 
+described in the Idiorm documentation. IMPORTANT: If sessions are needed then PHP sessions should be used instead of CodeIgniter's. 
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
 SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
