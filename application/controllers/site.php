@@ -1,10 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /*
-This class requires a database named "test" ontaining the table named "songs" as defined in 
-DBsripts/test.sql 
-This class also requires appropriate database connection configuration -- see README.md 
-for more information.
+The Site class requires a database named "test" ontaining the table named "songs" as defined 
+in DBsripts/test.sql 
+This class also requires appropriate database connection configuration -- see README.md for 
+more information.
 */
 
 
@@ -13,6 +13,7 @@ class Site extends CI_Controller {
 function __construct()
 {
 	parent::__construct();	
+	$this->load->helper('url');
 	$this->load->helper('security');
 //	$this->load->library('excel'); // EXAMPLE PHPEXCEL LOAD 
 //	$this->load->library('Zend'); // EXAMPLE ZEND LOAD 
@@ -43,11 +44,9 @@ public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER V
 
 public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE INTERFACE
     {
-        $this->load->database(); 
+        $this->load->database();
         $this->load->library('grocery_CRUD');
-		$songs3 = new grocery_CRUD();  
-		$songs3->set_table('songs');  
-        $this->load->view('songs3.php', $songs3->render());  
+        $this->load->view('songs3.php', $this->grocery_crud->set_table('songs')->render());  
 }			
  
 } // END CLASS
