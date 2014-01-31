@@ -46,6 +46,5 @@ application/config/database.php. IMPORTANT: If sessions are needed then PHP or Z
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
 THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of both Savant and CodeIgniter view usage.
-
 Links to demos of the sample controller's functions [pages] are <a href="http://crud-sthurber.rhcloud.com/cim/site/">here</a>
  
