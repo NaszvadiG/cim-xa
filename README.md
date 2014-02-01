@@ -4,10 +4,11 @@ CIM-Accelerant [a.k.a. CIM-XA]
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. Perhaps you need PDO 
 for cross-DBMS compatibility or HipHopVM [HHVM] compatibility? or options for json serialization? or HTML email? or login/authorization? 
 or support for prepared statements? Perhaps you simply prefer a more mainstream ORM approach? Perhaps you need a quick CRUD system? 
-Or strong Excel support? Or debugging via Chrome Console?
+Or strong Excel support? Or debugging via Chrome Console? Or template inheritance? 
 This distribution includes 100% PHP zero-compilation object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
-[auth, mail, permissions, serialzer, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing]. 
+[auth, mail, permissions, serialzer, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
+and PHPTI for template inhertiance. 
 This distribution therefore stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
 Paul M. Jones (Savant), Zend(Zend libraries), Adam Shaw (phpti) and others. 
 
@@ -24,9 +25,7 @@ SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idior
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
 While Savant is included in this distribution, it is not mandatory to use Savant for presentation -- CodeIgniter views may be used. 
 The sample code in application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
-in the usual directory.
-
-<a href="http://phpti.com/">PHPTI Template Inheritance Site</a>.
+in the usual directory. To use the PHPTI inheritance features see the <a href="http://phpti.com/">PHPTI Template Inheritance Site</a>.
 
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
@@ -46,5 +45,4 @@ application/config/database.php. IMPORTANT: If sessions are needed then PHP or Z
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
 THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of both Savant and CodeIgniter view usage.
-Links to demos of the sample controller's functions [pages] are <a href="http://crud-sthurber.rhcloud.com/cim/site/">here</a>
- 
+
