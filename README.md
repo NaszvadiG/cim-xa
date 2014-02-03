@@ -8,9 +8,9 @@ Or debugging via Chrome Console? Or simple template inheritance?
 This distribution includes 100% PHP, zero-compilation, object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
 [auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
-and PHPTI for simple painless template inhertiance. 
+and PHPTI for simple painless template inhertiance. MongoDB support is included using CodeIgniter active record systax [i.e.: not Idiorm]. 
 This distribution therefore stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
-Paul M. Jones (Savant), Zend(Zend libraries), Adam Shaw (phpti) and others. 
+Paul M. Jones (Savant), Zend(Zend libraries), Adam Shaw (phpti), Alex Bilbie (MongoDB library) and others. 
 
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
 
