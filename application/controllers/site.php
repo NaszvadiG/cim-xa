@@ -6,6 +6,9 @@ The Site class requires a database named "test" ontaining the tables as defined
 in DBsripts/test.sql 
 This class also requires appropriate database connection configuration -- see README.md for 
 more information.
+CSRF protection may be turned off for a particular function with:
+$CFG =& load_class('Config', 'core');
+$CFG->set_item('csrf_protection', FALSE);
 */
 
 
