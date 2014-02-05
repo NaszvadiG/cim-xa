@@ -4,7 +4,8 @@ CIM-Accelerant [a.k.a. CIM-XA]
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. Perhaps you need PDO 
 for cross-DBMS compatibility or HipHopVM [HHVM] compatibility? or HTML email? or login/authorization? or support for prepared statements? 
 Perhaps you simply prefer a more mainstream ORM approach? Perhaps you just need a quick CRUD system [with one or more cruds per page]? 
-Or MongoDB support? Or strong Excel support? Or debugging via Chrome Console? Or simple template inheritance? Or the cURLeasy library? 
+Or MongoDB support? Or strong Excel support? Or a powerful rule engine? 
+Or debugging via Chrome Console? Or simple template inheritance? Or the cURLeasy library? 
 This distribution includes 100% PHP, zero-compilation, object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
 [auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
@@ -37,7 +38,7 @@ BY USING THIS DISTRIBUTION IN WHOLE OR PART YOU CONSENT TO ALL APPLICABLE LICENS
 NOTES:
 This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE and 
 2-index_page is set to: ' ' to support URLs without showing index.php. This distribution's Savant departs from the original 
-in that it assumes the path to templates set to application/templates and the sample code reflects this assumption. 
+in that it assumes the path to templates is set to application/templates and the sample code reflects this assumption. 
 A database connection string configuration for Idiorm is located in application/config/idiorm.php which you may include in your 
 controller constructor, otherwise Idiom expects it coded inline. This string must reflect your database server attributes as 
 described in the Idiorm documentation. To use Grocery CRUD requires defining CodeIgniter's database connection in 
