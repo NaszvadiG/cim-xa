@@ -17,6 +17,7 @@ distribution helpful if your situation includes one or more of the following:
 - You need straightforward template inheritance
 - You need a cURL library
 - You need phpseclib [for more security choices]
+
 This distribution includes 100% PHP, zero-compilation, object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
 [auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
