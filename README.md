@@ -1,4 +1,4 @@
-CIM-Accelerant [a.k.a. CIM-XA]
+CIM-ACCELERANT [A.K.A. CIM-XA]
 ==============================
 
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. Perhaps you need PDO 
@@ -46,7 +46,7 @@ THIS DISTRIBUTION IS LICENSED AS A COMPILATION WORK UNDER THE SAME TERMS AS SET 
 RESPECTIVE LICENSES. ALL TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE OWNERS AND TITANIUM OPENSYSTEMS HAS NO AFFILIATION WITH ANY OF THEM. 
 BY USING THIS DISTRIBUTION IN WHOLE OR PART YOU CONSENT TO ALL APPLICABLE LICENSE TERMS, INCLUDING WITHOUT LIMITATION, THIS PARAGRAPH.
 
-NOTES
+Notes
 -----
 Libraries are housed in / or in /application/libraries, except as noted in the various README files in /. 
 This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE
@@ -60,7 +60,7 @@ described in the Idiorm documentation. To use Grocery CRUD requires defining Cod
 application/config/database.php. IMPORTANT: If sessions are needed then PHP or Zend sessions should be used instead of CodeIgniter's. 
 IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>
 
-SAMPLE CODE
+Sample Code
 -----------
 THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of several forms of usage. There is also a 
 sample controller for job queues in application/controllers/jobq.php.
