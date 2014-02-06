@@ -1,4 +1,4 @@
-CIM-ACCELERANT [A.K.A. CIM-XA]
+*CIM-ACCELERANT [A.K.A. CIM-XA]*
 ==============================
 
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. You may find this 
