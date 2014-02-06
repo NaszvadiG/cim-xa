@@ -1,11 +1,22 @@
 CIM-ACCELERANT [A.K.A. CIM-XA]
 ==============================
 
-A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. Perhaps you need PDO 
-for cross-DBMS compatibility or HipHopVM [HHVM] compatibility? or HTML email? or login/authorization? or support for prepared statements? 
-Perhaps you simply prefer a more mainstream ORM approach? Perhaps you just need a quick CRUD system [with one or more cruds per page]? 
-Or MongoDB support? Or strong Excel support? Or a powerful rule engine? Or a job queue [batch processing]?
-Or debugging via Chrome Console? Or simple template inheritance? Or the cURLeasy library? Or phpseclib for more security choices?
+A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. You may find this 
+distribution helpful if your situation includes one or more of the following:
+- You need PDO for cross-DBMS compatibility or HipHopVM [HHVM] compatibility 
+- You need HTML email 
+- You need login/authorization 
+- You need support for SQL prepared statements 
+- You simply prefer a more mainstream ORM approach
+- You need a very quick CRUD system [with one or more cruds per page]
+- You need MongoDB support [FoundationDB coming soon]
+- You need strong Excel data support
+- You need a powerful rule engine
+- You need a job queue facility [i.e.:batch/asynchronous processing]
+- You need debugging via Chrome Console
+- You need straightforward template inheritance
+- You need a cURL library
+- You need phpseclib [for more security choices]
 This distribution includes 100% PHP, zero-compilation, object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
 [auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
