@@ -1,0 +1,61 @@
+			    AMQPHP Notes.
+			     ------------
+
+Robin Harvey, 2011
+
+
+Amqphp  is  a complete  Amqp  protocol  implementation  and a  set  of
+libraries  for writing Amqp  producers and  consumers.  Amqphp  uses a
+high  performance asynchronous  processing model  to  receive messages
+using  an event loop,  and supports  SSL broker  connections.  Another
+notable feature  is support for  persistent connetions, this  can help
+make connections  between Amqp brokers and web  servers more efficient
+by avoiding the TCP / Amqp connection setup for each web request.
+
+For more in-depth documentation and news, check the Wiki:
+
+    https://github.com/BraveSirRobin/amqphp/wiki
+
+
+
+			   Getting Started.
+			   ----------------
+
+The easiest way  to get started with Amqphp is to  download one of the
+tagged releases,  these contain all  of the source code  and pre-built
+"packages" in the  build/ directory.  Have a play  round with the demo
+scripts in  the demo/ folder, you'll  probably have to  change some of
+the values to point the  scripts at your RabbitMQ install, this should
+be easy  enough.  If  you run the  demo-producer.php script  this will
+publish a number of messages, then run the demo-consumer.php script to
+read those test messages back again.
+
+                           Source Packages
+                           ---------------
+
+Because  of the  way  the Amqp  protocol  is defined,  we  use a  code
+generation approach  with Amqphp.  This means that,  for example, when
+the  RabbitMQ  people  introduce  a  new feature,  you  only  have  to
+regenerate the  Amqp "protocol bindings"  and you're ready to  use the
+new feature  (well, this isn't  true in *all*  cases, but most  of the
+simple ones anyway!).  As a result  of this, Amqphp uses a Phing build
+system that outputs  the source code library (i.e.  the classes in the
+src/  directory) together with  the protocol  bindings in  2 different
+"flavours":
+
+ * nspf - classes are packages according to their namespace
+ * cfp - classes are packaged one per file.
+
+In  most cases you'll  want to  use the  nspf package,  simply because
+there's fewer include files.  The  idea behind the cpf package is that
+this version can be used with  a class loader, for example if you want
+to autoload  the Amqphp packages.   There is no  functional difference
+between the 2 packages, they are  produced from the same set of source
+files.  For  more info on how to  use each kind of  package, check the
+class-loader.php file in the demos/ directory.
+
+To build  the packages  yourself you'll need  to install  phing first,
+then simply  `cd` in to  the Amqphp base  dir and type  `phing`.  Note
+that this hasn't been test on Windows and probably won't work there, I
+don't have a copy of Windows to test on, so if you're able to help out
+by fixing this I'd be very grateful!
