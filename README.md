@@ -26,7 +26,12 @@ SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idior
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
 While Savant is included in this distribution, it is not mandatory to use Savant for presentation -- CodeIgniter views may be used. 
 The sample code in application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
-in the usual directory. To use the PHPTI inheritance features see the <a href="http://phpti.com/">PHPTI Template Inheritance Site</a>.
+in the usual directory. To use the PHPTI inheritance features see the <a href="http://phpti.com/">PHPTI Template Inheritance Site</a>. 
+Job queue functionality is based on the following projeects: 
+<a href="https://github.com/hussaintamboli/Celery-CI">Celery-CI</a> [housed in /application/libraries]
+<a href="https://github.com/gjedeer/celery-php">Celery-PHP</a> 
+<a href="http://www.php.net/manual/en/amqp.setup.php">AMQP</a> 
+<a href="http://www.toforge.com/2011/01/run-celery-tasks-from-php/">Run Celery Tasks Article</a>
 
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
@@ -35,7 +40,7 @@ THIS DISTRIBUTION IS LICENSED AS A COMPILATION WORK UNDER THE SAME TERMS AS SET 
 RESPECTIVE LICENSES. ALL TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE OWNERS AND TITANIUM OPENSYSTEMS HAS NO AFFILIATION WITH ANY OF THEM. 
 BY USING THIS DISTRIBUTION IN WHOLE OR PART YOU CONSENT TO ALL APPLICABLE LICENSE TERMS, INCLUDING WITHOUT LIMITATION, THIS PARAGRAPH.
 
-NOTES:
+NOTES:  Libraries are housed in / or in /application/libraries, except as noted in the various README files in /. 
 This distribution's configuration for CodeIgniter departs from the original as follows: 1-csrf_protection is set to: TRUE
 [CSRF protection may be turned off for a particular function, such as a web service, with: $CFG =& load_class('Config', 'core');
 $CFG->set_item('csrf_protection', FALSE);] and also departs with: 
