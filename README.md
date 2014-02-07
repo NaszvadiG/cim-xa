@@ -59,13 +59,15 @@ This distribution's configuration for CodeIgniter departs from the original as f
 $CFG =& load_class('Config', 'core'); $CFG->set_item('csrf_protection', FALSE);] 
 - index_page is set to: ' ' to support URLs without showing index.php. 
 
-This distribution's Savant departs from the original 
-in that it assumes the path to templates is set to application/templates and the sample code reflects this assumption. 
-A database connection string configuration for Idiorm is located in application/config/idiorm.php which you may include in your 
+Other considerations:
+- this distribution's Savant departs from the original in that it assumes the path to templates 
+is set to application/templates and the sample code reflects this assumption. 
+- a database connection string configuration for Idiorm is located in application/config/idiorm.php which you may include in your 
 controller constructor, otherwise Idiom expects it coded inline. This string must reflect your database server attributes as 
-described in the Idiorm documentation. To use Grocery CRUD requires defining CodeIgniter's database connection in 
-application/config/database.php. IMPORTANT: If sessions are needed then PHP or Zend sessions should be used instead of CodeIgniter's. 
-IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>. If you use  
+described in the Idiorm documentation. 
+- to use Grocery CRUD requires defining CodeIgniter's database connection in application/config/database.php. IMPORTANT: 
+- if sessions are needed then PHP or Zend sessions should be used instead of CodeIgniter's. 
+- IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>. If you use  
 CI's Encryption class or CI's Session class you MUST set an encryption key.  See application/config/config.php
 
 Sample Code
