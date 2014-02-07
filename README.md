@@ -55,9 +55,9 @@ Notes
 -----
 Libraries are housed in / or in /application/libraries, except as noted in the various README files in /. 
 This distribution's configuration for CodeIgniter departs from the original as follows: 
---csrf_protection is set to: TRUE[CSRF protection may be turned off for a particular function, such as a web service, with: 
+- csrf_protection is set to: TRUE[CSRF protection may be turned off for a particular function, such as a web service, with: 
 $CFG =& load_class('Config', 'core'); $CFG->set_item('csrf_protection', FALSE);] 
---index_page is set to: ' ' to support URLs without showing index.php. 
+- index_page is set to: ' ' to support URLs without showing index.php. 
 This distribution's Savant departs from the original 
 in that it assumes the path to templates is set to application/templates and the sample code reflects this assumption. 
 A database connection string configuration for Idiorm is located in application/config/idiorm.php which you may include in your 
