@@ -38,18 +38,18 @@ SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idior
 
 <a href="http://phpsavant.com/docs/">Documentation for [optional] Savant Templating</a> and see also: 
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
+
 While Savant is included in this distribution, it is not mandatory to use Savant for presentation -- CodeIgniter views may be used. 
 The sample code in application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
-in the usual directory. To use the PHPTI inheritance features see the <a href="http://phpti.com/">PHPTI Template Inheritance Site</a>. 
-Job queue functionality is based on the following projeects: 
+in the usual directory. 
+
+To use the PHPTI inheritance features see the <a href="http://phpti.com/">PHPTI Template Inheritance Site</a>. 
+
+Job queue functionality requires enabling Python and is based on the following projeects: 
 <a href="https://github.com/hussaintamboli/Celery-CI">Celery-CI</a> [housed in /application/libraries]
 <a href="https://github.com/gjedeer/celery-php">Celery-PHP</a> 
 <a href="http://www.php.net/manual/en/amqp.setup.php">AMQP</a> 
 <a href="http://www.toforge.com/2011/01/run-celery-tasks-from-php/">Run Celery Tasks Article</a>
-
-Support
--------
-Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
 Notes
 -----
@@ -81,4 +81,8 @@ LICENSE
 <A HREF="HTTP://ELLISLAB.COM/CODEIGNITER/USER-GUIDE/LICENSE.HTML">THE CODEIGNITER LICENSE</A>. THE INDIVIDUAL COMPONENTS ARE SUBJECT TO THEIR 
 RESPECTIVE LICENSES. ALL TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE OWNERS AND TITANIUM OPENSYSTEMS HAS NO AFFILIATION WITH ANY OF THEM. 
 BY USING THIS DISTRIBUTION IN WHOLE OR PART YOU CONSENT TO ALL APPLICABLE LICENSE TERMS, INCLUDING WITHOUT LIMITATION, THIS PARAGRAPH.**
+
+Support
+-------
+Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.
 
