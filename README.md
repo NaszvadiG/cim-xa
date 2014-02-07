@@ -31,8 +31,9 @@ Some Useful External Resources
 
 <a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a>
 
-<a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record [Optional] Add-on for Idiorm</a> While 
-Paris is included in this distribution it is not necessary to use for the database layer--it merely provides an alternative 
+<a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record [Optional] Add-on for Idiorm</a> 
+
+While Paris is included in this distribution it is not necessary to use for the database layer--it merely provides an alternative 
 abstraction. The sample code in application/controllers/songs.php uses Idiorm only.
 SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
@@ -43,7 +44,7 @@ While Savant is included in this distribution, it is not mandatory to use Savant
 The sample code in application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
 in the usual directory. 
 
-To use the PHPTI inheritance features see the <a href="http://phpti.com/">PHPTI Template Inheritance Site</a>. 
+<a href="http://phpti.com/">Documentation for [optional] PHPTI Template Inheritance</a>. 
 
 Job queue functionality requires enabling Python and is based on the following projeects: 
 <a href="https://github.com/hussaintamboli/Celery-CI">Celery-CI</a> [housed in /application/libraries]
