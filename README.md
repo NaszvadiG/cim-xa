@@ -14,7 +14,7 @@ distribution helpful if your situation includes one or more of the following:
 - You need a powerful rule engine
 - You need a job queue facility [i.e.:batch/asynchronous processing]
 - You need debugging via Chrome Console
-- You need straightforward template inheritance
+- You need template inheritance without doing compile steps 
 - You need a cURL library
 - You need phpseclib [for more security choices]
 
