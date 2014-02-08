@@ -9,7 +9,7 @@ distribution helpful if your situation includes one or more of the following:
 - You need support for SQL prepared statements 
 - You need or simply prefer a more mainstream ORM approach
 - You need a very quick CRUD system [with one or more cruds per page]
-- You need MongoDB support [Cassandra coming soon]
+- You need MongoDB support 
 - You need strong Excel data support
 - You need a powerful rule engine
 - You need a job queue facility [i.e.:batch/asynchronous processing]
