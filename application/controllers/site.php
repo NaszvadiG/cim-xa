@@ -20,7 +20,7 @@ function __construct()
 	$this->load->helper('url');
 	$this->load->helper('security');
 //	$this->load->library('excel'); // EXAMPLE PHPEXCEL LOAD 
-//	$this->load->library('Zend'); // EXAMPLE ZEND LOAD 
+//	$this->load->library('Zend'); // EXAMPLE ZEND LOADER INIT 
 //	require 'application/libraries/Zend/Mail/Message.php'; // ALT EXAMPLE FOR ZEND LOAD 
 //	include 'chromephp/ChromePhp.php'; // REQUIRED ONLY FOR TESTING WITH CHROME CONSOLE
 }		

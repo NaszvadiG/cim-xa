@@ -17,7 +17,7 @@ distribution helpful if your situation includes one or more of the following:
 - You need debugging via Chrome Console
 - You need a cURL library
 - You need phpseclib [for more security choices]
-- You need HTML email 
+- You need HTML email -- if you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
 This distribution includes 100% PHP, zero-compilation, object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
