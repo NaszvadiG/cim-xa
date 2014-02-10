@@ -4,10 +4,11 @@
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. You may find this 
 distribution helpful if your situation includes one or more of the following:
 - You need PDO for cross-DBMS compatibility or HipHopVM [HHVM] compatibility 
-- You need login/authorization 
 - You need support for SQL prepared statements 
 - You need or simply prefer a more mainstream ORM approach
 - You need template inheritance without doing compile steps 
+- You need web analytics [piwik]
+- You need login/authorization 
 - You need a module code structure or HMVC 
 - You need a very quick CRUD system [with one or more cruds per page]
 - You need MongoDB support 
