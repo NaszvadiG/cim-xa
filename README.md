@@ -7,7 +7,7 @@ distribution helpful if your situation includes one or more of the following:
 - You need support for SQL prepared statements 
 - You need or simply prefer a more mainstream ORM approach
 - You need template inheritance without doing compile steps 
-- You need web analytics [piwik]
+- You need web analytics in your own database [piwik]
 - You need login/authorization 
 - You need a module code structure or HMVC 
 - You need a very quick CRUD system [with one or more cruds per page]
@@ -81,7 +81,7 @@ sample controller for job queues in application/controllers/jobq.php.
 LICENSE
 -------
 **THIS DISTRIBUTION IS LICENSED AS A COMPILATION WORK UNDER THE SAME TERMS AS SET FORTH IN 
-<A HREF="HTTP://ELLISLAB.COM/CODEIGNITER/USER-GUIDE/LICENSE.HTML">THE CODEIGNITER LICENSE</A>. THE INDIVIDUAL COMPONENTS ARE SUBJECT TO THEIR 
+<A HREF="http://ellislab.com/codeigniter/user-guide/license.html">THE CODEIGNITER LICENSE</A>. THE INDIVIDUAL COMPONENTS ARE SUBJECT TO THEIR 
 RESPECTIVE LICENSES. ALL TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE OWNERS AND TITANIUM OPENSYSTEMS HAS NO AFFILIATION WITH ANY OF THEM. 
 BY USING THIS DISTRIBUTION IN WHOLE OR PART YOU CONSENT TO ALL APPLICABLE LICENSE TERMS, INCLUDING WITHOUT LIMITATION, THIS PARAGRAPH.**
 
