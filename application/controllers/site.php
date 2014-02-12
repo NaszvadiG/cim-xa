@@ -43,19 +43,21 @@ public function songs1() // CONTROLLER FUNCTION USING IDIORM FOR A SAVANT VIEW
 	$data->songs = ORM::forTable('songs') 
 		->whereRaw('(`time` > ? AND `time` < ?)', array(2, 5)) 
 		->orderByAsc('artist') 
-		->findResultSet();
+		->findResultSet(); // SAVAANT ACCEPTS A RESULT SET
 	$data->display('songs1.php'); // SAVANT VIEW
 }     	
  
-public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER VIEW
+public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER PARSER VIEW
 {
+	$this->load->library('parser');	
 	require 'idiorm/idiorm.php';
 	require 'application/config/idiorm.php';
 	$data['songs'] = ORM::forTable('songs') 
 		->whereRaw('(`time` > ? AND `time` < ?)', array(2, 5)) 
 		->orderByAsc('artist') 
-		->findResultSet();
-	$this->load->view('songs2.php', $data); // CODEIGNITER VIEW
+		->findArray(); // PARSE CLASS ACCEPTS AN ARRAY
+		$this->parser->parse('songs2', $data);
+//		$this->load->view('songs2.php', $data); // CODEIGNITER VIEW
 }
 
 public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE INTERFACE

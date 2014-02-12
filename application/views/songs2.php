@@ -7,11 +7,11 @@
 <body>
 <!-- CODEIGNITER PRESENTATION LAYER -->
 <table>
-<?php foreach ($songs as $song): ?>
-<tr>
-	<td>ARTIST:</td><td><?php echo $song['artist']; ?></td>
-	<td>TITLE:</td><td><?php echo $song['title']; ?></td>
-</tr>
-<?php endforeach; ?>
+	{songs}
+		<tr>
+			<td>ARTIST:</td><td>{artist}</td>
+			<td>TITLE:</td><td>{title}</td>
+		</tr>
+	{/songs}
 </table>
 </body>
