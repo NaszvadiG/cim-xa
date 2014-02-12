@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Cim-xa by sfthurber</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/sfthurber/cim-xa">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Cim-xa</h1>
+            <h2>CIM-Accelerant [a.k.a. CIM-XA] is a distribution for the popular CodeIgniter framework, including zero-compilation object-oriented data layers [using PDO via Idiorm] and presentation layers [using Savant and PHPTI] as well as MongoDB support, job queue support, the Grocery CRUD, PHPExcel and  Zend libraries, all backed by ChromePHP for testing. By:</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/sfthurber/cim-xa/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/sfthurber/cim-xa/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="cim-accelerant-aka-cim-xa" class="anchor" href="#cim-accelerant-aka-cim-xa"><span class="octicon octicon-link"></span></a><em>CIM-ACCELERANT [A.K.A. CIM-XA]</em>
+</h1>
+
+<p>A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. You may find this 
+distribution helpful if your situation includes one or more of the following:</p>
+
+<ul>
+<li>You need PDO for cross-DBMS compatibility or HipHopVM [HHVM] compatibility </li>
+<li>You need support for SQL prepared statements </li>
+<li>You need or simply prefer a more mainstream ORM approach</li>
+<li>You need template inheritance without doing compile steps </li>
+<li>You need web analytics [piwik]</li>
+<li>You need login/authorization </li>
+<li>You need a module code structure or HMVC </li>
+<li>You need a very quick CRUD system [with one or more cruds per page]</li>
+<li>You need MongoDB support </li>
+<li>You need strong Excel data support</li>
+<li>You need a powerful rule engine</li>
+<li>You need a job queue facility [i.e.:batch/asynchronous processing]</li>
+<li>You need debugging via Chrome Console</li>
+<li>You need a cURL library</li>
+<li>You need phpseclib [for more security choices]</li>
+<li>You need HTML email -- if you also need a css inliner, see: beaker.mailchimp.com/inline-css</li>
+</ul><p>This distribution includes 100% PHP, zero-compilation, object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
+supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
+[auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
+and PHPTI for simple painless template inhertiance. MongoDB support is included using CodeIgniter active record systax [i.e.: not Idiorm]. 
+This distribution therefore stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
+Paul M. Jones (Savant), Zend(Zend libraries), Adam Shaw (phpti), Alex Bilbie (MongoDB library) and others. </p>
+
+<h2>
+<a name="some-useful-external-resources" class="anchor" href="#some-useful-external-resources"><span class="octicon octicon-link"></span></a>Some Useful External Resources</h2>
+
+<p><a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a></p>
+
+<p><a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a></p>
+
+<p><a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record [Optional] Add-on for Idiorm</a> </p>
+
+<p>While Paris is included in this distribution it is not necessary to use for the database layer--it merely provides an alternative 
+abstraction. The sample code in application/controllers/songs.php uses Idiorm only.
+SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a></p>
+
+<p><a href="http://phpsavant.com/docs/">Documentation for [optional] Savant Templating</a> and see also: 
+<a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. </p>
+
+<p>While Savant is included in this distribution, it is not mandatory to use Savant for presentation -- CodeIgniter views may be used. 
+The sample code in application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
+in the usual directory. </p>
+
+<p><a href="http://phpti.com/">Documentation for [optional] PHPTI Template Inheritance</a>. </p>
+
+<p>Job queue functionality requires enabling Python and is based on the following projeects: 
+<a href="https://github.com/hussaintamboli/Celery-CI">Celery-CI</a> [housed in /application/libraries]
+<a href="https://github.com/gjedeer/celery-php">Celery-PHP</a> 
+<a href="http://www.php.net/manual/en/amqp.setup.php">AMQP</a> 
+<a href="http://www.toforge.com/2011/01/run-celery-tasks-from-php/">Run Celery Tasks Article</a></p>
+
+<h2>
+<a name="notes" class="anchor" href="#notes"><span class="octicon octicon-link"></span></a>Notes</h2>
+
+<p>Libraries are housed in / or in /application/libraries, except as noted in the various README files in /. 
+This distribution's configuration for CodeIgniter departs from the original as follows: </p>
+
+<ul>
+<li>csrf_protection is set to: TRUE[CSRF protection may be turned off for a particular function, such as a web service, with: 
+$CFG =&amp; load_class('Config', 'core'); $CFG-&gt;set_item('csrf_protection', FALSE);] </li>
+<li>index_page is set to: ' ' to support URLs without showing index.php. </li>
+</ul><p>Other considerations:</p>
+
+<ul>
+<li>IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>. </li>
+<li>if sessions are needed then PHP or Zend sessions should be used instead of CodeIgniter's. </li>
+<li>If you use CI's Encryption class or CI's Session class you MUST set an encryption key.  See application/config/config.php</li>
+<li>this distribution's Savant departs from the original in that it assumes the path to templates is set to application/templates 
+and the sample code reflects this assumption. </li>
+<li>a database connection string configuration for Idiorm is located in application/config/idiorm.php which you may include in your 
+controller constructor, otherwise Idiom expects it coded inline. This string must reflect your database server attributes as 
+described in the Idiorm documentation. </li>
+<li>to use Grocery CRUD requires defining CodeIgniter's database connection in application/config/database.php. </li>
+</ul><h2>
+<a name="sample-code" class="anchor" href="#sample-code"><span class="octicon octicon-link"></span></a>Sample Code</h2>
+
+<p>THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of several forms of usage. There is also a 
+sample controller for job queues in application/controllers/jobq.php.</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>LICENSE</h2>
+
+<p><strong>THIS DISTRIBUTION IS LICENSED AS A COMPILATION WORK UNDER THE SAME TERMS AS SET FORTH IN 
+<a href="HTTP://ELLISLAB.COM/CODEIGNITER/USER-GUIDE/LICENSE.HTML">THE CODEIGNITER LICENSE</a>. THE INDIVIDUAL COMPONENTS ARE SUBJECT TO THEIR 
+RESPECTIVE LICENSES. ALL TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE OWNERS AND TITANIUM OPENSYSTEMS HAS NO AFFILIATION WITH ANY OF THEM. 
+BY USING THIS DISTRIBUTION IN WHOLE OR PART YOU CONSENT TO ALL APPLICABLE LICENSE TERMS, INCLUDING WITHOUT LIMITATION, THIS PARAGRAPH.</strong></p>
+
+<h2>
+<a name="support" class="anchor" href="#support"><span class="octicon octicon-link"></span></a>Support</h2>
+
+<p>Fee-based support and development work is available from Titanium Opensystems, l.c. -- <a href="//tinyurl.com/dbmsmax">see the website here</a>.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/sfthurber">sfthurber</a> can be found on <a href="https://github.com/sfthurber/cim-xa">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
