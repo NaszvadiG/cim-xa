@@ -114,6 +114,6 @@ public function employees_management2()
 	if($crud->getState() != 'list') { $this->_the_output($crud->render()); } else { return $crud->render(); }
 }
 
-} // END CLASS
+} // END Site Class
 
 ?>
