@@ -1,7 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-/*
+
+/* NOTES
 The Site class requires a database named "test" ontaining the tables as defined 
 in DBsripts/test.sql 
 This class also requires appropriate database connection configuration -- see README.md for 
@@ -11,6 +10,12 @@ $CFG =& load_class('Config', 'core');
 $CFG->set_item('csrf_protection', FALSE);
 */
 
+/* EXAMPLES
+	$this->load->library('excel'); // EXAMPLE PHPEXCEL LOAD 
+	$this->load->library('Zend'); // EXAMPLE ZEND LOADER INIT 
+	require 'application/libraries/Zend/Mail/Message.php'; // ALT EXAMPLE FOR ZEND LOAD 
+	include 'chromephp/ChromePhp.php'; // REQUIRED ONLY FOR TESTING WITH CHROME CONSOLE
+*/
 
 class Site extends CI_Controller {
 	 
@@ -19,11 +24,7 @@ function __construct()
 	parent::__construct();	
 	$this->load->helper('url');
 	$this->load->helper('security');
-//	$this->load->library('excel'); // EXAMPLE PHPEXCEL LOAD 
-//	$this->load->library('Zend'); // EXAMPLE ZEND LOADER INIT 
-//	require 'application/libraries/Zend/Mail/Message.php'; // ALT EXAMPLE FOR ZEND LOAD 
-//	include 'chromephp/ChromePhp.php'; // REQUIRED ONLY FOR TESTING WITH CHROME CONSOLE
-}		
+}	
 
 public function index() // LINKS
 {
@@ -56,8 +57,7 @@ public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER P
 		->whereRaw('(`time` > ? AND `time` < ?)', array(2, 5)) 
 		->orderByAsc('artist') 
 		->findArray(); // PARSE CLASS ACCEPTS AN ARRAY
-		$this->parser->parse('songs2', $data);
-//		$this->load->view('songs2.php', $data); // CODEIGNITER VIEW
+	$this->parser->parse('songs2', $data);
 }
 
 public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE INTERFACE
