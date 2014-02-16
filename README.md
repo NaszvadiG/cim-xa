@@ -9,7 +9,6 @@ distribution helpful if your situation includes one or more of the following:
 - You need template inheritance without doing compile steps 
 - You need web analytics in your own database [piwik]
 - You need login/authorization 
-- You need a module code structure or HMVC 
 - You need a very quick CRUD system [with one or more cruds per page]
 - You need MongoDB support 
 - You need strong Excel data support
