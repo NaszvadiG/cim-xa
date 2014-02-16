@@ -475,7 +475,8 @@ class Twiggy
 					you'll need always a directory for your templates, even your module
 					won't use templates */
 					if ( is_dir($loc . $this->_module . '/' . $this->_config['themes_base_dir'] . $theme) )
-						$this->_template_locations[] = $loc . $this->_module . '/' . $this->_config['themes_base_dir'] . $theme;
+						$this->_template_locations = array($loc . $this->_module . '/' . $this->_config['themes_base_dir'] . $theme); //MOD
+						//$this->_template_locations[] = $loc . $this->_module . '/' . $this->_config['themes_base_dir'] . $theme;
 				}
 			}
 		}
@@ -485,7 +486,8 @@ class Twiggy
 		// Reset the paths if needed.
 		if(is_object($this->_twig_loader))
 		{
-			$this->_twig_loader->setPaths($this->_template_locations);
+			$this->_template_locations =  array($this->_themes_base_dir . $theme); //MOD
+			//$this->_twig_loader->setPaths($this->_template_locations);
 		}
 	}
 
