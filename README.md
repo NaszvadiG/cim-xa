@@ -88,5 +88,5 @@ BY USING THIS DISTRIBUTION IN WHOLE OR PART YOU CONSENT TO ALL APPLICABLE LICENS
 Support
 -------
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- 
-<a href="//titaniumcloud.rhcloud.com">see the website here</a>.
+<a href="//my-titaniumcloud.rhcloud.com">see the website here</a>.
 
