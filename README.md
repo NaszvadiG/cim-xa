@@ -39,6 +39,7 @@ While Paris is included in this distribution it is not necessary to use for the 
 abstraction. The sample code in application/controllers/songs.php uses Idiorm only.
 SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
+<a href="http://edmundask.github.io/codeigniter-twiggy/">Documentation for [optional] Twiggy Templating</a>.
 <a href="http://phpsavant.com/docs/">Documentation for [optional] Savant Templating</a> and see also: 
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
 
