@@ -3,6 +3,7 @@
 
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. You may find this 
 distribution helpful if your situation includes one or more of the following:
+- You need the sparks package manager
 - You need PDO for cross-DBMS compatibility or HipHopVM [HHVM] compatibility 
 - You need support for SQL prepared statements 
 - You need or simply prefer a more mainstream ORM approach
