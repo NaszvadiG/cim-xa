@@ -41,11 +41,11 @@ abstraction. The sample code in application/controllers/songs.php uses Idiorm on
 SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
 <a href="http://edmundask.github.io/codeigniter-twiggy/">Documentation for [optional] Twiggy Templating</a>.
-<a href="http://phpsavant.com/docs/">Documentation for [optional] Savant Templating</a> and see also: 
+<a href="http://phpsavant.com/docs/">; and documentation for [optional] Savant Templating</a>; see also: 
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
 
-While Savant is included in this distribution, it is not mandatory to use Savant for presentation -- CodeIgniter views may be used. 
-The sample code in application/controllers/songs.php has an example of each type of view. If used, CodeIgniter views are located 
+While Twiggy and Savant are included in this distribution, it is not mandatory to use either for presentation -- CodeIgniter views may be used. 
+The sample code in application/controllers/songs.php has an example of CI and Savant views. If used, CodeIgniter views are located 
 in the usual directory. 
 
 <a href="http://phpti.com/">Documentation for [optional] PHPTI Template Inheritance</a>. 
