@@ -3,8 +3,7 @@
 
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. You may find this 
 distribution helpful if your situation includes one or more of the following:
-- You need the sparks package manager
-- You need PDO for cross-DBMS compatibility or HipHopVM [HHVM] compatibility 
+- You need PDO for cross-DBMS compatibility or HipHopVM [HHVM] 
 - You need support for SQL prepared statements 
 - You need or simply prefer a more mainstream ORM approach
 - You need template inheritance without doing compile steps 
@@ -13,7 +12,7 @@ distribution helpful if your situation includes one or more of the following:
 - You need a very quick CRUD system [with one or more cruds per page]
 - You need MongoDB support 
 - You need strong Excel data support
-- You need a powerful rule engine
+- You need a basic PHP rule engine
 - You need a job queue facility [i.e.:batch/asynchronous processing]
 - You need debugging via Chrome Console
 - You need a cURL library
