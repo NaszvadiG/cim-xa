@@ -3,13 +3,15 @@
 
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework and many extensions. You may find this 
 distribution helpful if your situation includes one or more of the following:
+<li>You need phpseclib [for more security choices]</li>
+<li>You need HTML email -- if you also need a css inliner, see: beaker.mailchimp.com/inline-css</li>
 - You need PDO for cross-DBMS compatibility or HipHopVM [HHVM] 
 - You need support for SQL prepared statements 
 - You need or simply prefer a more mainstream ORM approach
-- You need template inheritance without doing compile steps 
-- You need web analytics in your own database [piwik]
+- You need template with inheritance without compile steps
+- You need web analytics done your way
 - You need login/authorization 
-- You need a very quick CRUD system [with one or more cruds per page]
+- You need a very quick CRUD constuction tool
 - You need MongoDB support 
 - You need strong Excel data support
 - You need a basic PHP rule engine
