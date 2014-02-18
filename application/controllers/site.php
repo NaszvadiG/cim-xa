@@ -64,8 +64,10 @@ public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE IN
 {
 	$this->load->database();
 	$this->load->library('grocery_CRUD');
-	$this->load->view('songs3.php', $this->grocery_crud->set_table('songs')->render());  
-}			
+	$crud = new grocery_CRUD();
+	$crud->set_theme('datatables')->set_table('songs');
+	$this->load->view('songs3.php', $crud->render());  
+}		
  
 //====MULTIPLE CRUDS: 
 
