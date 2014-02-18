@@ -168,7 +168,7 @@ class Examples extends CI_Controller {
 
 		$js_files = $output1->js_files + $output2->js_files + $output3->js_files;
 		$css_files = $output1->css_files + $output2->css_files + $output3->css_files;
-		$output = "<h1>List 1</h1>".$output1->output."<h1>List 2</h1>".$output2->output."<h1>List 3</h1>".$output3->output;
+		$output = "<h1>Offices</h1>".$output1->output."<h1>Employees</h1>".$output2->output."<h1>Customers</h1>".$output3->output;
 
 		$this->_example_output((object)array(
 				'js_files' => $js_files,
