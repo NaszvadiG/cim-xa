@@ -11,7 +11,7 @@ distribution helpful if your situation includes one or more of the following:
 - You need template with inheritance without compile steps
 - You need web analytics done your way
 - You need login/authorization 
-- You need a very quick CRUD constuction tool
+- You need a very quick yet theme-able CRUD constuction tool
 - You need MongoDB support 
 - You need strong Excel data support
 - You need a basic PHP rule engine
