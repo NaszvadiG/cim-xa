@@ -28,11 +28,12 @@ function __construct()
 
 public function index() // LINKS
 {
-	$linkURL = ''; // '/cim/site/';
+	$linkURL = ''; 
 	echo 'LINKS <br /><a href="'.$linkURL.'songs1">songs1--Idiorm with a trivial Savant view</a><br />
-						<a href="'.$linkURL.'songs2">songs2--Idiorm with an equivalent CI view</a><br />	
-						<a href="'.$linkURL.'songs3">songs3--Gorcery CRUD</a><br />
-						<a href="'.$linkURL.'multigrids">company--Gorcery CRUD Multiple</a>';
+						<a href="'.$linkURL.'songs2">songs2--Idiorm with an equivalent CI parser-based view</a><br />	
+						<a href="'.$linkURL.'songs2v">songs2v--Idiorm with an equivalent CI loader-based view</a><br />	
+						<a href="'.$linkURL.'songs3v">songs3--Gorcery CRUD</a><br />
+						<a href="'.$linkURL.'multigrids">multi-table--Gorcery CRUD Multiple CRUDs on one page</a>';
 }
  
 public function songs1() // CONTROLLER FUNCTION USING IDIORM FOR A SAVANT VIEW
@@ -44,7 +45,7 @@ public function songs1() // CONTROLLER FUNCTION USING IDIORM FOR A SAVANT VIEW
 	$data->songs = ORM::forTable('songs') 
 		->whereRaw('(`time` > ? AND `time` < ?)', array(2, 5)) 
 		->orderByAsc('artist') 
-		->findResultSet(); // SAVAANT ACCEPTS A RESULT SET
+		->findResultSet(); 
 	$data->display('songs1.php'); // SAVANT VIEW
 }     	
  
@@ -56,8 +57,20 @@ public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER P
 	$data['songs'] = ORM::forTable('songs') 
 		->whereRaw('(`time` > ? AND `time` < ?)', array(2, 5)) 
 		->orderByAsc('artist') 
-		->findArray(); // PARSE CLASS ACCEPTS AN ARRAY
+		->findArray(); // PARSER CLASS ACCEPTS AN ARRAY
 	$this->parser->parse('songs2', $data);
+}     	
+ 
+public function songs2v() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER STANDARD VIEW
+{
+	require 'idiorm/idiorm.php';
+	require 'application/config/idiorm.php';
+	$this->data = new stdClass;
+	$this->data->songs = ORM::forTable('songs') 
+		->whereRaw('(`time` > ? AND `time` < ?)', array(2, 5)) 
+		->orderByAsc('artist') 
+		->findResultSet(); 
+	$this->load->view('songs2v', $this->data);
 }
 
 public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE INTERFACE
@@ -66,8 +79,8 @@ public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE IN
 	$this->load->library('grocery_CRUD');
 	$crud = new grocery_CRUD();
 	$crud->set_theme('datatables')->set_table('songs')->unset_export()->unset_print();
-	$this->load->view('songs3.php', $crud->render());    
-}		
+	$this->load->view('songs3.php', $crud->render());  
+}			
  
 //====MULTIPLE CRUDS: 
 
