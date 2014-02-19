@@ -8,7 +8,8 @@ You may find this distribution helpful if your situation includes one or more of
 - You need PDO for cross-DBMS compatibility or HipHopVM [HHVM] 
 - You need support for SQL prepared statements 
 - You need or simply prefer a more mainstream ORM approach
-- You need template with inheritance without compile steps
+- You need templates with inheritance without compile steps
+- You need templates that auto-escape output
 - You need web analytics done your way
 - You need login/authorization 
 - You need a very quick yet theme-able CRUD constuction tool
