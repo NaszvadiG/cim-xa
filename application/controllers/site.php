@@ -30,8 +30,8 @@ public function index() // LINKS
 {
 	$linkURL = ''; 
 	echo 'LINKS <br /><a href="'.$linkURL.'songs1">songs1--Idiorm with a trivial Savant view</a><br />
-						<a href="'.$linkURL.'songs2v">songs2v--Idiorm with an equivalent CI based view</a><br />	
-						<a href="'.$linkURL.'songs3v">songs3--Gorcery CRUD</a><br />
+						<a href="'.$linkURL.'songs2">songs2v--Idiorm with an equivalent CI based view</a><br />	
+						<a href="'.$linkURL.'songs3">songs3--Gorcery CRUD</a><br />
 						<a href="'.$linkURL.'multigrids">multi-table--Gorcery CRUD Multiple CRUDs on one page</a>';
 }
  
@@ -47,7 +47,7 @@ public function songs1() // CONTROLLER FUNCTION USING IDIORM FOR A SAVANT VIEW
 		->findResultSet(); 
 	$data->display('songs1.php'); // SAVANT VIEW
 }     	
- 
+/* 
 public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER PARSER VIEW
 {
 	$this->load->library('parser');	
@@ -59,8 +59,8 @@ public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER P
 		->findArray(); // PARSER CLASS ACCEPTS AN ARRAY
 	$this->parser->parse('songs2', $data);
 }     	
- 
-public function songs2v() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER STANDARD VIEW
+*/
+public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER STANDARD VIEW
 {
 	require 'idiorm/idiorm.php';
 	require 'application/config/idiorm.php';
