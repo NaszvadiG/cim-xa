@@ -21,6 +21,10 @@ You may find this distribution helpful if your situation includes one or more of
 - You need phpseclib [for more security choices]
 - You need HTML email -- if you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
+This distribution places CI's directory structure above the webroot. The assumed webroot is www but that name may be changed to fit the 
+installation. The webroot contains CI's index.php and any non-CI content for the installation. CI's index.php contains path modifications 
+to reflect the CI directory structure placement. All of this is done for security reasons. Ci's directory structure is otherwise undisturbed 
+for eas of maintenance.
 This distribution includes 100% PHP, zero-compilation, object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
 [auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 

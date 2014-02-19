@@ -77,7 +77,7 @@ public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE IN
 	$this->load->database();
 	$this->load->library('grocery_CRUD');
 	$crud = new grocery_CRUD();
-	$crud->set_theme('datatables')->set_table('songs')->unset_export()->unset_print();
+	$crud->set_theme('flexigrid')->set_table('songs')->unset_export()->unset_print();
 	$this->load->view('songs3.php', $crud->render());  
 }			
  
