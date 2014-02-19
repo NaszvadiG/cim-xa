@@ -8,6 +8,7 @@ more information.
 CSRF protection may be turned off for a particular function with:
 $CFG =& load_class('Config', 'core');
 $CFG->set_item('csrf_protection', FALSE);
+In case of trouble see the errors: ini_set('display_errors',"On");
 */
 
 /* EXAMPLES
@@ -28,11 +29,8 @@ function __construct()
 
 public function index() // LINKS
 {
-	$linkURL = ''; 
-	echo 'LINKS <br /><a href="'.$linkURL.'songs1">songs1--Idiorm with a trivial Savant view</a><br />
-						<a href="'.$linkURL.'songs2">songs2v--Idiorm with an equivalent CI based view</a><br />	
-						<a href="'.$linkURL.'songs3">songs3--Gorcery CRUD</a><br />
-						<a href="'.$linkURL.'multigrids">multi-table--Gorcery CRUD Multiple CRUDs on one page</a>';
+	$data['linkURL'] = ""; 
+	$this->load->view('links', $data);
 }
  
 public function songs1() // CONTROLLER FUNCTION USING IDIORM FOR A SAVANT VIEW

@@ -7,7 +7,7 @@
 <?php foreach($js_files as $file): ?><script src="<?php echo $file; ?>"></script><?php endforeach; ?>
 </head>
 <body>
-    <div>
+    <div style="margin:auto;text-align:center;">
 		<?php echo $output; ?>
     </div>
 </body>

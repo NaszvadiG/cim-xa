@@ -16,15 +16,10 @@ margin-right: auto;
 </style>	
 </head>
 <body>
-<!-- CODEIGNITER PRESENTATION LAYER -->
 <div class="container center">
-<table class="table">
-	<?php foreach ($songs as $song) { ?>
-		<tr>
-			<td>ARTIST:</td><td><?=htmlentities($song->artist, ENT_QUOTES)?></td>
-			<td>TITLE:</td><td><?=htmlentities($song->title, ENT_QUOTES)?></td>
-		</tr>
-	<?php } ?>
-</table>
-</div>
+LINKS <br /><a href="<?=$linkURL?>songs1">songs1--Idiorm with a trivial Savant view</a><br />
+			<a href="<?=$linkURL?>songs2">songs2v--Idiorm with an equivalent CI based view</a><br />	
+			<a href="<?=$linkURL?>songs3">songs3--Gorcery CRUD</a><br />
+			<a href="<?=$linkURL?>multigrids">multi-table--Gorcery CRUD Multiple CRUDs on one page</a>
+<div>
 </body>
