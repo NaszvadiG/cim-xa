@@ -17,9 +17,9 @@ margin-right: auto;
 </head>
 <body>
 <div class="container center">
-LINKS <br /><a href="<?=$linkURL?>songs1">songs1--Idiorm with a trivial Savant view</a><br />
-			<a href="<?=$linkURL?>songs2">songs2v--Idiorm with an equivalent CI based view</a><br />	
-			<a href="<?=$linkURL?>songs3">songs3--Gorcery CRUD</a><br />
+LINKS <br /><a href="<?=$linkURL?>songs1">Songs1--Idiorm with a trivial Savant view</a><br />
+			<a href="<?=$linkURL?>songs2">Songs2v--Idiorm with an equivalent CI based view</a><br />	
+			<a href="<?=$linkURL?>../examples/index">Demos -- Gorcery CRUD</a><br />
 			<!--a href="<?=$linkURL?>multigrids">multi-table--Gorcery CRUD Multiple CRUDs on one page</a-->
 <div>
 </body>
