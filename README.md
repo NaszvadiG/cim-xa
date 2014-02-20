@@ -21,7 +21,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need debugging via Chrome Console {PHPChrome]
 - You need a cURL library [PPHPcURL]
 - You need more security choices [PHPSecLib]
-- You need HTML email [Zend]
+- You need HTML email [Savant]
 -- if you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
 This distribution places CI's directory structure above the webroot. The assumed webroot is www but that name may be changed to fit the 
