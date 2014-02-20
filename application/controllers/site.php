@@ -79,8 +79,8 @@ public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE IN
 	$this->load->view('songs3.php', $crud->render());  
 }			
  
-//====MULTIPLE CRUDS: 
-
+//====MULTIPLE CRUDS: experimental 
+/*
 public function _the_output($output = null)
 {
 	$this->load->view('demo.php',$output);
@@ -125,7 +125,7 @@ public function employees_management2()
 		->set_crud_url_path(site_url(strtolower(__CLASS__."/".__FUNCTION__)),site_url(strtolower(__CLASS__."/multigrids")));
 	if($crud->getState() != 'list') { $this->_the_output($crud->render()); } else { return $crud->render(); }
 }
-
+*/
 } // END Site Class
 
 ?>
