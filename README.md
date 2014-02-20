@@ -5,22 +5,24 @@ A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter
 You may find this distribution helpful if your situation includes one or more of the following:
 <li>You need phpseclib [for more security choices]</li>
 <li>You need HTML email -- if you also need a css inliner, see: beaker.mailchimp.com/inline-css</li>
-- You need PDO for cross-DBMS compatibility or HipHopVM [HHVM] 
-- You need support for SQL prepared statements 
-- You need or simply prefer a more mainstream ORM approach
-- You need templates with inheritance without compile steps
-- You need templates that auto-escape output
-- You need web analytics done your way
-- You need login/authorization 
-- You need a very quick yet theme-able CRUD constuction tool
+- You need PDO for cross-DBMS compatibility or HipHopVM [Idiorm] 
+- You need support for SQL prepared statements [Idiorm]
+- You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
+- You need an integrated full-feature JavaScript MVC framework [Ember]
+- You need templates with inheritance without compile steps [Ember or PHPTI]
+- You need templates that auto-escape output [Ember or Savant3]
+- You need web analytics done your way [Piwik]
+- You need login/authorization [Zend]
+- You need a very quick yet theme-able CRUD constuction tool [Grocery]
 - You need MongoDB support 
-- You need strong Excel data support
-- You need a basic PHP rule engine
-- You need a job queue facility [i.e.:batch/asynchronous processing]
-- You need debugging via Chrome Console
-- You need a cURL library
-- You need phpseclib [for more security choices]
-- You need HTML email -- if you also need a css inliner, see: beaker.mailchimp.com/inline-css
+- You need strong Excel data support [PHPExcel]
+- You need a basic PHP rule engine [PHPRuler]
+- You need a job queue facility [Celery]
+- You need debugging via Chrome Console {PHPChrome]
+- You need a cURL library [PPHPcURL]
+- You need more security choices [PHPSecLib]
+- You need HTML email [Zend]
+-- if you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
 This distribution places CI's directory structure above the webroot. The assumed webroot is www but that name may be changed to fit the 
 installation. The webroot contains CI's index.php and any non-CI content for the installation. CI's index.php contains path modifications 
