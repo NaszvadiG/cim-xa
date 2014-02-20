@@ -56,7 +56,7 @@ SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idior
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
 
 While Twiggy and Savant are included in this distribution, it is not mandatory to use either for presentation -- CodeIgniter views may be used. 
-The sample code in application/controllers/songs.php has an example of CI and Savant views. If used, CodeIgniter views are located 
+The sample code in application/controllers/site.php has examples of CI and Savant views. If used, CodeIgniter views are located 
 in the usual directory. 
 
 <a href="http://phpti.com/">Documentation for [optional] PHPTI Template Inheritance</a>. 
