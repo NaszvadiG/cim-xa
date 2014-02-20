@@ -37,7 +37,11 @@ Paul M. Jones (Savant), Zend(Zend libraries), Adam Shaw (phpti), Alex Bilbie (Mo
 
 Some Useful External Resources
 -----------------
+
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
+
+<a href=http://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background?rq=1">Why 
+you may need a JS MVC framework</a>
 
 <a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a>
 
