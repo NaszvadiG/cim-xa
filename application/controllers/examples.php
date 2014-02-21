@@ -87,7 +87,7 @@ class Examples extends CI_Controller {
 	{
 			$crud = new grocery_CRUD();
 
-			$crud->set_relation('customerNumber','customers','{contactLastName} {contactFirstName}');
+			$crud->set_relation('customerNumber','customers','customerName');
 			$crud->display_as('customerNumber','Customer');
 			$crud->set_table('orders');
 			$crud->set_subject('Order');
