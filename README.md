@@ -17,22 +17,21 @@ You may find this distribution helpful if your situation includes one or more of
 - You need MongoDB support 
 - You need strong Excel data support [PHPExcel]
 - You need a basic PHP rule engine [PHPRuler]
-- You need a job queue facility [Celery]
+- You need a job queue facility [Celery + AmqPHP]
 - You need debugging via Chrome Console {PHPChrome]
 - You need a cURL library [PPHPcURL]
 - You need more security choices [PHPSecLib]
 - You need HTML email [Savant, Zend]
 - If you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
-This distribution places CI's directory structure above the webroot. The assumed webroot is www but that name may be changed to fit the 
-installation. The webroot contains CI's index.php and any non-CI content for the installation. CI's index.php contains path modifications 
-to reflect the CI directory structure placement. All of this is done for security reasons. CI's directory structure is otherwise undisturbed 
-for ease of maintenance.
+Intro
+-----------------
+
 This distribution includes 100% PHP, zero-compilation, object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
 [auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
 and PHPTI for simple painless template inhertiance. MongoDB support is included using CodeIgniter active record systax [i.e.: not Idiorm]. 
-This distribution therefore stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
+This distribution stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
 Paul M. Jones (Savant), Zend(Zend libraries), Adam Shaw (phpti), Alex Bilbie (MongoDB library) and others. 
 
 Some Useful External Resources
@@ -67,8 +66,13 @@ Job queue functionality requires enabling Python and is based on the following p
 <a href="http://www.php.net/manual/en/amqp.setup.php">AMQP</a> 
 <a href="http://www.toforge.com/2011/01/run-celery-tasks-from-php/">Run Celery Tasks Article</a>
 
-Notes
+Installation Notes
 -----
+
+This distribution places CI's directory structure above the webroot. The assumed webroot is www but that name may be changed to fit the 
+installation. The webroot contains CI's index.php and any non-CI content for the installation. CI's index.php contains path modifications 
+to reflect the CI directory structure placement. All of this is done for security reasons. CI's directory structure is otherwise undisturbed 
+for ease of maintenance.
 Libraries are housed in / or in /application/libraries, except as noted in the various README files in /. 
 This distribution's configuration for CodeIgniter departs from the original as follows: 
 - csrf_protection is set to: TRUE[CSRF protection may be turned off for a particular function, such as a web service, with: 
