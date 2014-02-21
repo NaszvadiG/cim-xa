@@ -32,28 +32,17 @@ public function index() // LINKS
 	$this->load->view('links', $data);
 }
  
-public function songs1() // CONTROLLER FUNCTION USING IDIORM FOR A SAVANT VIEW
+public function songs1() // CONTROLLER FUNCTION USING IDIORM + SAVANT 
 {
-	require 'idiorm/idiorm.php';
-	require 'application/config/idiorm.php';
-	require 'savant/Savant3.php'; 
-	$data = new Savant3();
-	$data->songs = ORM::forTable('songs') 
-		->whereRaw('(`time` > ? AND `time` < ?)', array(2, 5)) 
-		->orderByAsc('artist') 
-		->findResultSet(); 
-	$data->display('songs1.php'); // SAVANT VIEW
+	$this->load->model('songs');
+	$this->data = $this->songs->getS();  
+	$this->data->display('songs1.php'); // SAVANT VIEW
 }     	
 
-public function songs2() // CONTROLLER FUNCTION USING IDIORM FOR A CODEIGNITER STANDARD VIEW
+public function songs2() // CONTROLLER FUNCTION USING IDIORM + CODEIGNITER VIEW
 {
-	require 'idiorm/idiorm.php';
-	require 'application/config/idiorm.php';
-	$this->data = new stdClass;
-	$this->data->songs = ORM::forTable('songs') 
-		->whereRaw('(`time` > ? AND `time` < ?)', array(2, 5)) 
-		->orderByAsc('artist') 
-		->findResultSet(); 
+	$this->load->model('songs');
+	$this->data = $this->songs->get(); 
 	$this->load->view('songs2v', $this->data);
 }
 
