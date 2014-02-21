@@ -32,7 +32,7 @@ public function index() // LINKS
 	$this->load->view('links', $data);
 }
  
-public function songs1() // CONTROLLER FUNCTION USING IDIORM + SAVANT 
+public function songs1() // CONTROLLER FUNCTION USING IDIORM + SAVANT VIEW
 {
 	$this->load->model('songs');
 	$this->data = $this->songs->getS();  
