@@ -72,7 +72,7 @@ class Examples extends CI_Controller {
 
 			$crud->set_table('customers');
 			$crud->columns('customerName','contactLastName','phone','city','country','salesRepEmployeeNumber','creditLimit');
-			$crud->display_as('salesRepEmployeeNumber','from Employeer')
+			$crud->display_as('salesRepEmployeeNumber','Sales Employee')
 				 ->display_as('customerName','Name')
 				 ->display_as('contactLastName','Last Name');
 			$crud->set_subject('Customer');
