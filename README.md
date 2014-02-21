@@ -3,8 +3,7 @@
 
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework (Version 2.1.4) and many extensions. 
 You may find this distribution helpful if your situation includes one or more of the following:
-<li>You need phpseclib [for more security choices]</li>
-<li>You need HTML email -- if you also need a css inliner, see: beaker.mailchimp.com/inline-css</li>
+
 - You need PDO for cross-DBMS compatibility or HipHopVM [Idiorm] 
 - You need support for SQL prepared statements [Idiorm]
 - You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
