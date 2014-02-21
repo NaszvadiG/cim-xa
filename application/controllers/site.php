@@ -14,8 +14,7 @@ In case of trouble see the errors: ini_set('display_errors',"On");
 /* EXAMPLES
 	$this->load->library('excel'); // EXAMPLE PHPEXCEL LOAD 
 	$this->load->library('Zend'); // EXAMPLE ZEND LOADER INIT 
-	require 'application/libraries/Zend/Mail/Message.php'; // ALT EXAMPLE FOR ZEND LOAD 
-	include 'chromephp/ChromePhp.php'; // REQUIRED ONLY FOR TESTING WITH CHROME CONSOLE
+	include 'chromephp/ChromePhp.php'; // TO TEST WITH CHROME CONSOLE
 */
 
 class Site extends CI_Controller {
