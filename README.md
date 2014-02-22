@@ -7,9 +7,10 @@ You may find this distribution helpful if your situation includes one or more of
 - You need PDO for cross-DBMS compatibility or HipHopVM [Idiorm] 
 - You need support for SQL prepared statements [Idiorm]
 - You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
+- You need a fully RESTful server implementation capability
 - You need to integrate a JavaScript MVC framework*
-- You need templates with inheritance without compile steps [Ember or PHPTI]
-- You need templates that auto-escape output [Ember or Savant3]
+- You need templates with inheritance without compile steps [PHPTI]
+- You need templates that auto-escape output [Savant3]
 - You need web analytics done your way [Piwik]
 - You need login/authorization [Zend]
 - You need a very quick yet theme-able CRUD constuction tool [Grocery]
@@ -23,8 +24,8 @@ You may find this distribution helpful if your situation includes one or more of
 - You need HTML email [Savant, Zend]
 - If you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
-* ie: load and instantiates Javascript controllers based upon which CI controller is active and 
-pass information from PHP to your Javascript without printing data into the DOM. From there you 
+* ie: Ember loads and instantiates Javascript controllers based upon which CI controller is active and 
+passes information from PHP to your Javascript without printing data into the DOM. From there you 
 can also launch into a larger JS framework such as Angular.
 
 Intro
@@ -41,6 +42,8 @@ Some Useful External Resources
 -----------------
 
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
+
+<a herf="https://github.com/philsturgeon/codeigniter-restserver">RESTful Server Tutorial for CodeIgniter by Phil Sturgeon</a>
 
 <a href=http://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background?rq=1">Why 
 you may need a JS MVC framework [see the first answer for an excellent introduction]</a>
