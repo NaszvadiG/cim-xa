@@ -7,7 +7,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need PDO for cross-DBMS compatibility or HipHopVM [Idiorm] 
 - You need support for SQL prepared statements [Idiorm]
 - You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
-- You need an integrated full-feature JavaScript MVC framework [Ember]
+- You need to integrate a JavaScript MVC framework*
 - You need templates with inheritance without compile steps [Ember or PHPTI]
 - You need templates that auto-escape output [Ember or Savant3]
 - You need web analytics done your way [Piwik]
@@ -22,6 +22,9 @@ You may find this distribution helpful if your situation includes one or more of
 - You need more security choices [PHPSecLib]
 - You need HTML email [Savant, Zend]
 - If you also need a css inliner, see: beaker.mailchimp.com/inline-css
+
+* ie: load and instantiates Javascript controllers based upon which CI controller is active and 
+pass information from PHP to your Javascript without printing data into the DOM.
 
 Intro
 -----------------
