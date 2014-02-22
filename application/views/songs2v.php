@@ -20,10 +20,11 @@ margin-right: auto;
 <div class="container center">
 <table class="table">
 <?php foreach ($songs as $song): ?>
-		<tr>
-			<td>ARTIST:</td><td><?=htmlentities($song->artist, ENT_QUOTES)?></td>
-			<td>TITLE:</td><td><?=htmlentities($song->title, ENT_QUOTES)?></td>
-		</tr>
+<tr>
+	<td>ARTIST:</td><td><?=htmlentities($song->artist, ENT_QUOTES)?></td>
+	<td>TITLE:</td><td><?=htmlentities($song->title, ENT_QUOTES)?></td>
+	<td>TIME:</td><td><?=htmlentities($song->time, ENT_QUOTES)?></td>
+</tr>
 <?php endforeach; ?>
 </table>
 </div>

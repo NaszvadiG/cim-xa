@@ -9,7 +9,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
 - You need a fully RESTful server implementation capability
 - You need to integrate a JavaScript MVC framework*
-- You need templates with inheritance without compile steps [PHPTI]
+- You need template inheritance without compile steps [PHPTI]
 - You need templates that auto-escape output [Savant3]
 - You need web analytics done your way [Piwik]
 - You need login/authorization [Zend]
