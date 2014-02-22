@@ -19,12 +19,12 @@ margin-right: auto;
 <!-- CODEIGNITER PRESENTATION LAYER -->
 <div class="container center">
 <table class="table">
-	<?php foreach ($songs as $song) { ?>
+<?php foreach ($songs as $song): ?>
 		<tr>
 			<td>ARTIST:</td><td><?=htmlentities($song->artist, ENT_QUOTES)?></td>
 			<td>TITLE:</td><td><?=htmlentities($song->title, ENT_QUOTES)?></td>
 		</tr>
-	<?php } ?>
+<?php endforeach; ?>
 </table>
 </div>
 </body>

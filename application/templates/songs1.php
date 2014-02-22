@@ -18,10 +18,10 @@ margin-right: auto;
 <!-- SAVANT PRESENTATION LAYER -->
 <div class="container center">
 <table class="table">
-<?php foreach ($this->songs as $key=>$song): ?>
+<?php foreach ($this->songs as $song): ?>
 <tr>
-	<td>ARTIST:</td><td><?php echo $this->eprint($song['artist']); ?></td>
-	<td>TITLE:</td><td><?php echo $this->eprint($song['title']); ?></td>
+	<td>ARTIST:</td><td><?php echo $this->eprint($song->artist); ?></td>
+	<td>TITLE:</td><td><?php echo $this->eprint($song->title); ?></td>
 </tr>
 <?php endforeach; ?>
 </table>
