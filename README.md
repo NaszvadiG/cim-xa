@@ -24,7 +24,8 @@ You may find this distribution helpful if your situation includes one or more of
 - If you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
 * ie: load and instantiates Javascript controllers based upon which CI controller is active and 
-pass information from PHP to your Javascript without printing data into the DOM.
+pass information from PHP to your Javascript without printing data into the DOM. From there you 
+can also launch into a larger JS framework such as Angular.
 
 Intro
 -----------------
