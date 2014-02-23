@@ -16,10 +16,16 @@ margin-right: auto;
 </style>	
 </head>
 <body>
+<!-- CODEIGNITER PRESENTATION LAYER -->
 <div class="container center">
-LINKS <br /><a href="<?=$linkURL?>songs1">Songs--Idiorm model with a trivial Savant view</a><br />
-			<a href="<?=$linkURL?>songs2">Songs--Idiorm model with a trivial CI view</a><br />	
-			<a href="<?=$linkURL?>songs2c">Songs--CI model with a trivial CI view</a><br />	
-			<a href="<?=$linkURL?>../examples/index">Gorcery CRUD demos menu</a><br />
-<div>
+<table class="table">
+<?php foreach ($songs as $song): ?>
+<tr>
+	<td>ARTIST:</td><td><?=htmlentities($song['artist'], ENT_QUOTES)?></td>
+	<td>TITLE:</td><td><?=htmlentities($song['title'], ENT_QUOTES)?></td>
+	<td>TIME:</td><td><?=htmlentities($song['time'], ENT_QUOTES)?></td>
+</tr>
+<?php endforeach; ?>
+</table>
+</div>
 </body>

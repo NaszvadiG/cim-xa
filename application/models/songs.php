@@ -28,6 +28,15 @@ function getS() {
 	return($data);
 }     	
 
+function ci_get() {
+	$this->load->database();
+	$where = 'time > 2 AND time < 5';
+	$this->db->from('songs')
+		->where($where)
+		->order_by('artist');
+	return($this->db->get()->result_array());
+}     	
+
 } // END Class
 
 ?>
