@@ -5,7 +5,7 @@ function __construct() {
 	parent::__construct();
 }
 
-function get() {
+function i_get() {
 	require 'idiorm/idiorm.php';
 	require 'application/config/idiorm.php';
 	$data = new stdClass;
@@ -16,7 +16,7 @@ function get() {
 	return($data);
 }     	
 
-function getS() {
+function i_getS() {
 	require 'idiorm/idiorm.php';
 	require 'application/config/idiorm.php';
 	require 'savant/Savant3.php'; 
@@ -34,8 +34,8 @@ function ci_get() {
 	$this->db->from('songs')
 		->where($where)
 		->order_by('artist');
-	return($this->db->get()->result_array());
-}     	
+	return($this->db->get()->result());
+}     
 
 } // END Class
 

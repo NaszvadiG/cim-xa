@@ -20,20 +20,20 @@ public function index() // LINKS
 public function songs1() // CONTROLLER FUNCTION USING IDIORM + SAVANT VIEW
 {
 	$this->load->model('songs');
-	$this->songs->getS()->display('songs1.php'); // SAVANT VIEW
+	$this->songs->i_getS()->display('songs1.php'); // SAVANT VIEW
 }     	
 
 public function songs2() // CONTROLLER FUNCTION USING IDIORM + CODEIGNITER VIEW
 {
 	$this->load->model('songs');
-	$this->load->view('songs2v', $this->songs->get());
+	$this->load->view('songs2', $this->songs->i_get());
 }
 
 public function songs2c() // CONTROLLER FUNCTION USING IDIORM + CODEIGNITER VIEW
 {
 	$this->load->model('songs');
 	$data['songs'] = $this->songs->ci_get(); 
-	$this->load->view('songs2c', $data);
+	$this->load->view('songs2', $data);
 }
 
 public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE INTERFACE

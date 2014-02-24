@@ -56,11 +56,10 @@ While Paris is included in this distribution it is not necessary to use for the 
 abstraction. The sample code in application/controllers/songs.php uses Idiorm only.
 SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
-<a href="http://edmundask.github.io/codeigniter-twiggy/">Documentation for [optional] Twiggy Templating</a>.
 <a href="http://phpsavant.com/docs/">; and documentation for [optional] Savant Templating</a>; see also: 
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
 
-While Twiggy and Savant are included in this distribution, it is not mandatory to use either for presentation -- CodeIgniter views may be used. 
+While Savant is included in this distribution, it is not mandatory to use it for presentation -- CodeIgniter views may be used. 
 The sample code in application/controllers/site.php has examples of CI and Savant views. If used, CodeIgniter views are located 
 in the usual directory. 
 
@@ -99,7 +98,7 @@ described in the Idiorm documentation.
 Sample Code
 -----------
 THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of several forms of usage. There is also a 
-sample controller for job queues in application/controllers/jobq.php and an example for Twiggy in application/controllers/twiggyTest.php.
+sample controller for job queues in application/controllers/jobq.php.
 
 LICENSE
 -------
