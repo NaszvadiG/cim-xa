@@ -2,19 +2,23 @@
 
 /* SEE NOTES AND EXAMPLES AT THE END */
 
-class Site extends CI_Controller {
+class Site extends MY_Bouncer {
 	 
 function __construct()
 {
 	parent::__construct();	
-	$this->load->helper('url');
-	$this->load->helper('security');
 }	
 
 public function index() // LINKS
 {
 	$data['linkURL'] = ""; 
 	$this->load->view('links', $data);
+}
+
+public function logout() 
+{
+	$this->session->set_userdata('login', FALSE);
+	redirect('site', 'refresh');
 }
  
 public function songs1() // CONTROLLER FUNCTION USING IDIORM + SAVANT VIEW
