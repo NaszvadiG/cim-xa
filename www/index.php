@@ -190,7 +190,22 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
-
+/*
+| -------------------------------------------------------------------
+|  Native Auto-load
+| -------------------------------------------------------------------
+| 
+| Nothing to do with cnfig/autoload.php, this allows PHP autoload to work
+| for base controllers and some third-party libraries.
+|
+*/
+function __autoload($class)
+{
+ if(strpos($class, 'CI_') !== 0)
+ {
+  @include_once( APPPATH . 'core/'. $class . EXT );
+ }
+}
 /*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE

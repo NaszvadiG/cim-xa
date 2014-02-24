@@ -220,11 +220,11 @@ $config['cache_path'] = '';
 | Encryption Key
 |--------------------------------------------------------------------------
 |
-| If you use the Encryption class or the Session class you
-| MUST set an encryption key.  See the user guide for info.
+| IF YOU USE THE ENCRYPTION CLASS OR THE SESSION CLASS YOU
+| MUST SET AN ENCRYPTION KEY.  SEE THE USER GUIDE FOR INFO.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'ChangeThisToSomeThingUnique';
 
 /*
 |--------------------------------------------------------------------------
