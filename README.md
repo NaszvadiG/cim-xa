@@ -25,7 +25,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need to format HTML email or other non-browser views [Savant]
 - If you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
-* ie: Ember loads and instantiates Javascript controllers based upon which CI controller is active and 
+ *ie: Ember loads and instantiates Javascript controllers based upon which CI controller is active and 
 passes information from PHP to your Javascript without printing data into the DOM. From there you 
 can also launch into a larger JS framework such as Angular.
 
