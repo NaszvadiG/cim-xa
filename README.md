@@ -8,11 +8,11 @@ You may find this distribution helpful if your situation includes one or more of
 - You need support for SQL prepared statements [Idiorm]
 - You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
 - You need a fully RESTful server implementation capability
-- You need to integrate a JavaScript MVC framework*
-- You need template inheritance without compile steps [PHPTI]
+- You need to integrate with JavaScript or a JS MVC framework*
+- You need template inheritance without messy compile steps [PHPTI]
 - You need templates that auto-escape output [Savant3]
 - You need web analytics done your way [Piwik]
-- You need login/authorization [Zend]
+- You need login/authorization [a provided CI example or Zend]
 - You need a very quick yet theme-able CRUD constuction tool [Grocery]
 - You need MongoDB support 
 - You need strong Excel data support [PHPExcel]
@@ -21,7 +21,8 @@ You may find this distribution helpful if your situation includes one or more of
 - You need debugging via Chrome Console {PHPChrome]
 - You need a cURL library [PPHPcURL]
 - You need more security choices [PHPSecLib]
-- You need HTML email [Savant, Zend]
+- You need to send HTML email [Zend]
+- You need to format HTML email or other non-browser views [Savant]
 - If you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
 * ie: Ember loads and instantiates Javascript controllers based upon which CI controller is active and 

@@ -17,7 +17,7 @@ class Login extends CI_Controller {
 			$this->session->set_userdata('loginformsent', 0);			
 			$user = $this->input->post('user', TRUE);
 			$pass = $this->input->post('pass', TRUE);
-		//ADD YOUR LOGIN AUTH LOOKUP HERE OTHERWISE WE ACCEPT ANY USERNAME&PASSWORD
+		//ADD YOUR LOGIN AUTH MODEL HERE OTHERWISE WE ACCEPT ANY USERNAME&PASSWORD
 			$this->session->set_userdata('login', 1);
 			redirect('site', 'refresh'); 
 		}
