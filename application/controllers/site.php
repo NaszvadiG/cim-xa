@@ -11,8 +11,7 @@ function __construct()
 
 public function index() // LINKS
 {
-	$data['linkURL'] = ""; 
-	$this->load->view('links', $data);
+	$this->load->view('links');
 }
 
 public function logout() 

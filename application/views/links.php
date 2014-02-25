@@ -17,9 +17,9 @@ margin-right: auto;
 </head>
 <body>
 <div class="container center">
-LINKS <br /><a href="<?=$linkURL?>songs1">Songs--Idiorm model with a trivial Savant view</a><br />
-			<a href="<?=$linkURL?>songs2">Songs--Idiorm model with a trivial CI view</a><br />	
-			<a href="<?=$linkURL?>songs2c">Songs--CI model with a trivial CI view</a><br />	
-			<a href="<?=$linkURL?>../examples/index">Gorcery CRUD demos menu</a><br />
+LINKS <br /><a href="<?=site_url()?>site/songs1">Songs--Idiorm model with a trivial Savant view</a><br />
+			<a href="<?=site_url()?>site/songs2">Songs--Idiorm model with a trivial CI view</a><br />	
+			<a href="<?=site_url()?>site/songs2c">Songs--CI model with a trivial CI view</a><br />	
+			<a href="<?=site_url()?>examples">Gorcery CRUD demos menu</a><br />
 <div>
 </body>
