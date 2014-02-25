@@ -75,18 +75,14 @@ Job queue functionality requires enabling Python and is based on the following p
 Installation Notes
 -----
 
-This distribution places CI's directory structure above the webroot. The assumed webroot is www but that name may be changed to fit the 
-installation. The webroot contains CI's index.php and any non-CI content for the installation. CI's index.php contains path modifications 
-to reflect the CI directory structure placement. All of this is done for security reasons. CI's directory structure is otherwise undisturbed 
-for ease of maintenance.
-If your webroot is something other than in www then copy the index.php in www to your webroot directory. 
-If you install CIM-XA in the webroot instead of at the same level as webroot then alter $config['base_url']	in application/config/config.php 
-accordingly.
 Libraries are housed in / or in /application/libraries, except as noted in the various README files in /. 
 This distribution's configuration for CodeIgniter departs from the original as follows: 
 - csrf_protection is set to: TRUE[CSRF protection may be turned off for a particular function, such as a web service, with: 
 $CFG =& load_class('Config', 'core'); $CFG->set_item('csrf_protection', FALSE);] 
 - index_page is set to: ' ' to support URLs without showing index.php. 
+- there is an optional auth system, using MY_Bouncer in application/core, which is effectively disabled for any class that isn't 
+extending MY-Bouncer. So For example, login.php can run without first logging in because class Login extends CI_Controller. 
+But site.php cannunt run without first loggin in becaue class Site extends MY_Bouncer.
 
 Other considerations:
 - IMPORTANT: <a href="http://www.php.net/manual/en/session.security.php">See PHP session security details here</a>. 
