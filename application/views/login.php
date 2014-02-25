@@ -35,7 +35,7 @@ margin-right: auto;
   <div class="form-group">
     <div class="col-sm-offset-3 col-sm-6">
       <div>
-        for demo purposes any value may be netered for the username and password
+        <b>for demo purposes any value may be entered for the username and password</b>
       </div>
     </div>
   </div>
