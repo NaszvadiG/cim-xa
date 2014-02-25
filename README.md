@@ -9,7 +9,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
 - You need a fully RESTful server implementation capability
 - You need to integrate a JavaScript MVC framework*
-- You need templates with inheritance without compile steps [PHPTI]
+- You need template inheritance without compile steps [PHPTI]
 - You need templates that auto-escape output [Savant3]
 - You need web analytics done your way [Piwik]
 - You need login/authorization [Zend]
@@ -43,7 +43,7 @@ Some Useful External Resources
 
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
 
-<a herf="https://github.com/philsturgeon/codeigniter-restserver">RESTful Server Tutorial for CodeIgniter by Phil Sturgeon</a>
+<a href="https://github.com/philsturgeon/codeigniter-restserver">RESTful Server Tutorial for CodeIgniter by Phil Sturgeon</a>
 
 <a href=http://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background?rq=1">Why 
 you may need a JS MVC framework [see the first answer for an excellent introduction]</a>
@@ -56,11 +56,10 @@ While Paris is included in this distribution it is not necessary to use for the 
 abstraction. The sample code in application/controllers/songs.php uses Idiorm only.
 SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
-<a href="http://edmundask.github.io/codeigniter-twiggy/">Documentation for [optional] Twiggy Templating</a>.
 <a href="http://phpsavant.com/docs/">; and documentation for [optional] Savant Templating</a>; see also: 
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
 
-While Twiggy and Savant are included in this distribution, it is not mandatory to use either for presentation -- CodeIgniter views may be used. 
+While Savant is included in this distribution, it is not mandatory to use it for presentation -- CodeIgniter views may be used. 
 The sample code in application/controllers/site.php has examples of CI and Savant views. If used, CodeIgniter views are located 
 in the usual directory. 
 
@@ -79,6 +78,9 @@ This distribution places CI's directory structure above the webroot. The assumed
 installation. The webroot contains CI's index.php and any non-CI content for the installation. CI's index.php contains path modifications 
 to reflect the CI directory structure placement. All of this is done for security reasons. CI's directory structure is otherwise undisturbed 
 for ease of maintenance.
+If your webroot is something other than in www then copy the index.php in www to your webroot directory. 
+If you install CIM-XA in the webroot instead of at the same level as webroot then alter $config['base_url']	in application/config/config.php 
+accordingly.
 Libraries are housed in / or in /application/libraries, except as noted in the various README files in /. 
 This distribution's configuration for CodeIgniter departs from the original as follows: 
 - csrf_protection is set to: TRUE[CSRF protection may be turned off for a particular function, such as a web service, with: 
@@ -99,7 +101,7 @@ described in the Idiorm documentation.
 Sample Code
 -----------
 THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of several forms of usage. There is also a 
-sample controller for job queues in application/controllers/jobq.php and an example for Twiggy in application/controllers/twiggyTest.php.
+sample controller for job queues in application/controllers/jobq.php.
 
 LICENSE
 -------
