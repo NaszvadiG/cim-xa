@@ -79,10 +79,10 @@ Libraries are housed in / or in /application/libraries, except as noted in the v
 This distribution's configuration for CodeIgniter departs from the original as follows: 
 - csrf_protection is set to: TRUE[CSRF protection may be turned off for a particular function, such as a web service, with: 
 $CFG =& load_class('Config', 'core'); $CFG->set_item('csrf_protection', FALSE);] 
-- index_page is set to: ' ' to support URLs without showing index.php. 
+- index_page is set to: ' ' to support URLs without showing index.php and .htaccess is coded accordingly. 
 - there is an optional auth system, using MY_Bouncer in application/core, which is effectively disabled for any class that isn't 
 extending MY-Bouncer. So For example, login.php can run without first logging in because class Login extends CI_Controller. 
-But site.php cannunt run without first loggin in becaue class Site extends MY_Bouncer.
+But site.php cannot run without first logging in because class Site extends MY_Bouncer.
 
 Other considerations:
 - If you use CI's Encryption class or CI's Session class you MUST set an encryption key.  See application/config/config.php

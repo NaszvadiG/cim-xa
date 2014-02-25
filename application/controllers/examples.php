@@ -8,7 +8,7 @@ class Examples extends MY_Bouncer {
 
 		$this->load->database();
 		$this->load->helper('url');
-
+		$this->theme = 'datatables';
 		$this->load->library('grocery_CRUD');
 	}
 
@@ -19,7 +19,7 @@ class Examples extends MY_Bouncer {
 
 	public function offices()
 	{
-		$output = $this->grocery_crud->render();
+		$output = $this->grocery_crud->set_theme($this->theme)->render();
 
 		$this->_example_output($output);
 	}
@@ -35,6 +35,8 @@ class Examples extends MY_Bouncer {
 			$crud = new grocery_CRUD();
 
 			$crud->set_table('offices');
+			$crud->set_theme($this->theme);
+			$crud->unset_export();
 			$crud->set_subject('Office');
 			$crud->required_fields('city');
 			$crud->columns('city','country','phone','addressLine1','postalCode');
@@ -53,6 +55,8 @@ class Examples extends MY_Bouncer {
 			$crud = new grocery_CRUD();
 
 			$crud->set_table('employees');
+			$crud->set_theme($this->theme);
+			$crud->unset_export();
 			$crud->set_relation('officeCode','offices','city');
 			$crud->display_as('officeCode','Office City');
 			$crud->set_subject('Employee');
@@ -71,6 +75,8 @@ class Examples extends MY_Bouncer {
 			$crud = new grocery_CRUD();
 
 			$crud->set_table('customers');
+			$crud->set_theme($this->theme);
+			$crud->unset_export();
 			$crud->columns('customerName','contactLastName','phone','city','country','salesRepEmployeeNumber','creditLimit');
 			$crud->display_as('salesRepEmployeeNumber','Sales Employee')
 				 ->display_as('customerName','Name')
@@ -90,6 +96,8 @@ class Examples extends MY_Bouncer {
 			$crud->set_relation('customerNumber','customers','customerName');
 			$crud->display_as('customerNumber','Customer');
 			$crud->set_table('orders');
+			$crud->set_theme($this->theme);
+			$crud->unset_export();
 			$crud->set_subject('Order');
 			$crud->unset_add();
 			$crud->unset_delete();
@@ -104,6 +112,8 @@ class Examples extends MY_Bouncer {
 			$crud = new grocery_CRUD();
 
 			$crud->set_table('products');
+			$crud->set_theme($this->theme);
+			$crud->unset_export();
 			$crud->set_subject('Product');
 			$crud->unset_columns('productDescription');
 			$crud->callback_column('buyPrice',array($this,'valueToEuro'));
@@ -123,6 +133,8 @@ class Examples extends MY_Bouncer {
 		$crud = new grocery_CRUD();
 
 		$crud->set_table('film');
+		$crud->set_theme($this->theme);
+		$crud->unset_export();
 		$crud->set_relation_n_n('actors', 'film_actor', 'actor', 'film_id', 'actor_id', 'fullname','priority');
 		$crud->set_relation_n_n('category', 'film_category', 'category', 'film_id', 'category_id', 'name');
 		$crud->unset_columns('special_features','description','actors');
@@ -180,6 +192,8 @@ class Examples extends MY_Bouncer {
 	{
 		$crud = new grocery_CRUD();
 		$crud->set_table('offices');
+		$crud->set_theme($this->theme);
+		$crud->unset_export();
 		$crud->set_subject('Office');
 		$crud->set_crud_url_path(site_url(strtolower(__CLASS__."/".__FUNCTION__)),site_url(strtolower(__CLASS__."/multigrids")));
 		$crud->unset_add();
@@ -198,6 +212,8 @@ class Examples extends MY_Bouncer {
 	{
 		$crud = new grocery_CRUD();
 		$crud->set_table('employees');
+		$crud->set_theme($this->theme);
+		$crud->unset_export();
 		$crud->set_relation('officeCode','offices','city');
 		$crud->display_as('officeCode','Office City');
 		$crud->set_subject('Employee');
@@ -221,6 +237,8 @@ class Examples extends MY_Bouncer {
 
 		$crud = new grocery_CRUD();
 		$crud->set_table('customers');
+		$crud->set_theme($this->theme);
+		$crud->unset_export();
 		$crud->columns('customerName','contactLastName','phone','city','country','salesRepEmployeeNumber','creditLimit');
 		$crud->display_as('salesRepEmployeeNumber','from Employeer')
 			 ->display_as('customerName','Name')
