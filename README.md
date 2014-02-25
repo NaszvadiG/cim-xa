@@ -20,7 +20,6 @@ You may find this distribution helpful if your situation includes one or more of
 - You need a job queue facility [Celery + AmqPHP]
 - You need debugging via Chrome Console {PHPChrome]
 - You need a cURL library [PPHPcURL]
-- You need more security choices [PHPSecLib]
 - You need to send HTML email [Zend]
 - You need to format HTML email or other non-browser views [Savant]**
 
@@ -106,7 +105,7 @@ LICENSE
 RESPECTIVE LICENSES. ALL TRADEMARKS ARE THE PROPERTY OF THEIR RESPECTIVE OWNERS AND TITANIUM OPENSYSTEMS HAS NO AFFILIATION WITH ANY OF THEM. 
 BY USING THIS DISTRIBUTION IN WHOLE OR PART YOU CONSENT TO ALL APPLICABLE LICENSE TERMS, INCLUDING WITHOUT LIMITATION, THIS PARAGRAPH.**
 
-Support
+Optional Commercial Support
 -------
 Fee-based support and development work is available from Titanium Opensystems, l.c. -- 
 <a href="//my-titaniumcloud.rhcloud.com">see the website here</a>.

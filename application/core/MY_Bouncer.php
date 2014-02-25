@@ -11,7 +11,7 @@ function __construct()
 	$this->load->helper('url');
 	if($this->session->userdata('login') != 1)
 	{
-		$this->session->set_userdata('loginformsent', 0);
+		$this->session->set_userdata('login', 0);
 		redirect('login', 'refresh');
 	}	
 }	

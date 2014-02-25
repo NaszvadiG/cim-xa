@@ -13,12 +13,6 @@ public function index() // LINKS
 {
 	$this->load->view('links');
 }
-
-public function logout() 
-{
-	$this->session->set_userdata('login', FALSE);
-	redirect('site', 'refresh');
-}
  
 public function songs1() // CONTROLLER FUNCTION USING IDIORM + SAVANT VIEW
 {

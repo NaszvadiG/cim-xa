@@ -12,9 +12,8 @@ class Login extends CI_Controller {
 
 	public function index() 
 	{
-		if ($this->session->userdata('loginformsent') == 1)
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 		{
-			$this->session->set_userdata('loginformsent', 0);			
 			$user = $this->input->post('user', TRUE);
 			$pass = $this->input->post('pass', TRUE);
 		//ADD YOUR LOGIN AUTH MODEL HERE OTHERWISE WE ACCEPT ANY USERNAME&PASSWORD
@@ -22,7 +21,6 @@ class Login extends CI_Controller {
 			redirect('site', 'refresh'); 
 		}
 		$this->session->set_userdata('login', 0);
-		$this->session->set_userdata('loginformsent', 1);			
 		$this->load->view('login');			
 		
 	}

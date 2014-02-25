@@ -13,7 +13,6 @@ function __construct()
 public function index() // LINKS
 {
 	$this->session->set_userdata('login', 0);
-	$this->session->set_userdata('loginformsent', 0);			
 	redirect('site', 'refresh');
 }
 } 
