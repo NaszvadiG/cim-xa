@@ -83,12 +83,18 @@ class Examples extends MY_Bouncer {
 				 ->display_as('contactLastName','Last Name');
 			$crud->set_subject('Customer');
 			$crud->set_relation('salesRepEmployeeNumber','employees','lastName');
+			$crud->callback_edit_field('customerName',array($this,'edit_field_callback_cust1'));
 
 			$output = $crud->render();
 
 			$this->_example_output($output);
 	}
-
+	function edit_field_callback_cust1($value, $primary_key)
+	{
+		return '<input type="text" maxlength="50" value="'.$value.'" name="customerName"> 
+					<a href="'.site_url().'examples/orders_management/1/'.$primary_key.'/1">View Customer Orders</a>'; 
+	}
+	
 	public function orders_management()
 	{
 			$crud = new grocery_CRUD();
@@ -101,6 +107,7 @@ class Examples extends MY_Bouncer {
 			$crud->set_subject('Order');
 			$crud->unset_add();
 			$crud->unset_delete();
+			if ($this->uri->segment(5) == 1) { $crud->where('orders.customerNumber', $this->uri->segment(4)); }
 
 			$output = $crud->render();
 
