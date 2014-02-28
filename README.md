@@ -24,7 +24,8 @@ You may find this distribution helpful if your situation includes one or more of
 - You need to send HTML email [Zend]
 - You need to format HTML email or other non-browser views [Savant]***
 
- *see <a href="https://github.com/sfthurber/CodeIgniter-AngularJS-App">sample angularjs/CodeIgniter-AngularJS application</a>
+ *see <a href="https://github.com/sfthurber/CodeIgniter-AngularJS-App">sample angularjs/CodeIgniter-AngularJS application</a>; see also 
+ <a href="http://www.ng-newsletter.com/posts/angular-on-mobile.html">The Definitive Guide to Angular on Mobile</a>. 
 
  **ie: Ember loads and instantiates Javascript controllers based upon which CI controller is active and 
 passes information from PHP to your Javascript without printing data into the DOM. From there you 
