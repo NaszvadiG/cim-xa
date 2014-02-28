@@ -4,11 +4,11 @@
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework (Version 2.1.4) and many extensions. 
 You may find this distribution helpful if your situation includes one or more of the following:
 
-- You need PDO for cross-DBMS compatibility or HipHopVM [Idiorm] 
-- You need support for SQL prepared statements [Idiorm]
+- You need PDO for cross-DBMS compatibility [Idiorm] 
+- You need easy-to-use support for SQL prepared statements [Idiorm]
 - You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
-- You need a fully RESTful server implementation capability
-- You need to integrate with JavaScript or a JS MVC framework*
+- You need a fully RESTful server implementation capability*
+- You need to integrate with JavaScript or a JS MVC framework**
 - You need simple template inheritance without messy compile steps [PHPTI]
 - You need simple templates that auto-escape output [Savant3]
 - You need complex templates -- themes, modules, partial views [CI-Template]
@@ -22,13 +22,15 @@ You may find this distribution helpful if your situation includes one or more of
 - You need debugging via Chrome Console {PHPChrome]
 - You need a cURL library [PHPcURL]
 - You need to send HTML email [Zend]
-- You need to format HTML email or other non-browser views [Savant]**
+- You need to format HTML email or other non-browser views [Savant]***
 
- *ie: Ember loads and instantiates Javascript controllers based upon which CI controller is active and 
+ *see <a href="https://github.com/sfthurber/CodeIgniter-AngularJS-App">sample angularjs/CodeIgniter-AngularJS application</a>
+
+ **ie: Ember loads and instantiates Javascript controllers based upon which CI controller is active and 
 passes information from PHP to your Javascript without printing data into the DOM. From there you 
 can also launch into a larger JS framework such as Angular.
 
- **If you also need a css inliner, see: beaker.mailchimp.com/inline-css
+ ***If you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
 Intro
 -----------------
