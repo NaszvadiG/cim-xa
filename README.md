@@ -33,7 +33,7 @@ can also launch into a larger JS framework such as Angular.
 Intro
 -----------------
 
-This distribution includes zero-compilation, object-oriented data and presentation layers [CodeIgniter views remain usable if desired], 
+This distribution includes zero-compilation, object-oriented data and presentation layers together with Bootstrap 3.0 and many themes, 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
 [auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
 and PHPTI for simple painless template inhertiance. MongoDB support is included using CodeIgniter active record systax [i.e.: not Idiorm]. 
@@ -78,12 +78,12 @@ Installation Notes
 
 Libraries are housed in / or in /application/libraries, except as noted in the various README files in /. 
 This distribution's configuration for CodeIgniter departs from the original as follows: 
-- csrf_protection is set to: TRUE[CSRF protection may be turned off for a particular function, such as a web service, with: 
+- csrf_protection is set to: TRUE [CSRF protection may be turned off for a particular function, such as a web service, with: 
 $CFG =& load_class('Config', 'core'); $CFG->set_item('csrf_protection', FALSE);] 
 - index_page is set to: ' ' to support URLs without showing index.php and .htaccess is coded accordingly. 
-- there is an optional auth system, using MY_Bouncer in application/core, which is effectively disabled for any class that isn't 
-extending MY-Bouncer. So For example, login.php can run without first logging in because class Login extends CI_Controller. 
-But site.php cannot run without first logging in because class Site extends MY_Bouncer.
+- there is an optional auth system, using MY_Bouncer in application/core, which is bypassed for any class that doesn't 
+extend MY-Bouncer. So For example, login.php can run without first logging in because class Login extends CI_Controller. 
+But site.php cannot run [as-written] without first logging in because class Site extends MY_Bouncer.
 
 Other considerations:
 - If you use CI's Encryption class or CI's Session class you MUST set an encryption key.  See application/config/config.php
