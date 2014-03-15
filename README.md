@@ -7,8 +7,8 @@ You may find this distribution helpful if your situation includes one or more of
 - You need PDO for cross-DBMS compatibility [Idiorm] 
 - You need easy-to-use support for SQL prepared statements [Idiorm]
 - You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
-- You need a fully RESTful server implementation capability*
-- You need to integrate with JavaScript or a JS MVC framework**
+- You need a fully RESTful server implementation capability
+- You need to integrate with JavaScript* or a JS MVC framework**
 - You need simple template inheritance without messy compile steps [PHPTI]
 - You need simple templates that auto-escape output [Savant3]
 - You need complex templates -- themes, modules, partial views [CI-Template]
