@@ -12,7 +12,6 @@ You may find this distribution helpful if your situation includes one or more of
 - You need simple template inheritance without messy compile steps [PHPTI]
 - You need simple templates that auto-escape output [Savant3]
 - You need complex templates -- themes, modules, partial views [CI-Template]
-- You need web analytics done your way [Piwik]
 - You need login/authorization [a provided CI example or Zend]
 - You need a very quick yet theme-able CRUD constuction tool [Grocery]
 - You need MongoDB support 
