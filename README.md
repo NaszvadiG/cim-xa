@@ -6,7 +6,7 @@ You may find this distribution helpful if your situation includes one or more of
 
 - You need PDO for cross-DBMS compatibility [Idiorm] 
 - You need easy-to-use support for SQL prepared statements [Idiorm]
-- You need or simply prefer a more mainstream ORM approach {Idiorm, optionally, Paris]
+- You need or simply prefer a more mainstream ORM approach {Idiorm]
 - You need a fully RESTful server implementation capability
 - You need to integrate with JavaScript* or a JS MVC framework**
 - You need simple template inheritance without messy compile steps [PHPTI]
@@ -16,7 +16,6 @@ You may find this distribution helpful if your situation includes one or more of
 - You need a very quick yet theme-able CRUD constuction tool [Grocery]
 - You need MongoDB support 
 - You need strong Excel data support [PHPExcel]
-- You need a basic PHP rule engine [PHPRuler]
 - You need a job queue facility [Celery + AmqPHP]
 - You need debugging via Chrome Console {PHPChrome]
 - You need a cURL library [PHPcURL]
@@ -39,7 +38,7 @@ This distribution includes zero-compilation, object-oriented data and presentati
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
 [auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
 and PHPTI for simple painless template inhertiance. MongoDB support is included using CodeIgniter active record systax [i.e.: not Idiorm]. 
-This distribution stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Paris, Idiorm), 
+This distribution stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Idiorm), 
 Paul M. Jones (Savant), Zend(Zend libraries), Adam Shaw (phpti), Alex Bilbie (MongoDB library) and others. 
 
 Some Useful External Resources
@@ -53,12 +52,6 @@ Some Useful External Resources
 you may need a JS MVC framework [see the first answer for an excellent introduction]</a>
 
 <a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a>
-
-<a href="http://paris.readthedocs.org/en/latest/">Documentation for Paris Active Record [Optional] Add-on for Idiorm</a> 
-
-While Paris is included in this distribution it is not necessary to use for the database layer--it merely provides an alternative 
-abstraction. The sample code in application/controllers/songs.php uses Idiorm only.
-SHOULD I USE IDIORM ALONE OR IDIORM+PARIS? <a href="http://j4mie.github.io/idiormandparis/">See the Idiorm and Paris story here</a>
 
 <a href="http://phpsavant.com/docs/">; and documentation for [optional] Savant Templating</a>; see also: 
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
