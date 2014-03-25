@@ -9,7 +9,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need or simply prefer a more mainstream ORM approach {Idiorm]
 - You need a fully RESTful server implementation capability
 - You need to integrate with JavaScript* or a JS MVC framework**
-- You need simple templates that auto-escape output [Savant3]
+- You need views/templates that auto-escape output [Savant3]
 - You need login/authorization [a provided CI example or Zend]
 - You need a very quick yet theme-able CRUD constuction tool [Grocery]
 - You need MongoDB support 
