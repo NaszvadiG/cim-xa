@@ -23,7 +23,7 @@ public function songs1() // CONTROLLER FUNCTION USING IDIORM + SAVANT VIEW
 public function songs2() // CONTROLLER FUNCTION USING IDIORM + CODEIGNITER VIEW
 {
 	$this->load->model('songs');
-	$this->load->view('songs2', $this->songs->i_get());
+	$this->load->view('songs2', $this->songs->ci_get());
 }
 
 public function songs2c() // CONTROLLER FUNCTION USING IDIORM + CODEIGNITER VIEW
