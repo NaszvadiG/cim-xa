@@ -9,9 +9,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need or simply prefer a more mainstream ORM approach {Idiorm]
 - You need a fully RESTful server implementation capability
 - You need to integrate with JavaScript* or a JS MVC framework**
-- You need simple template inheritance without messy compile steps [PHPTI]
 - You need simple templates that auto-escape output [Savant3]
-- You need complex templates -- themes, modules, partial views [CI-Template]
 - You need login/authorization [a provided CI example or Zend]
 - You need a very quick yet theme-able CRUD constuction tool [Grocery]
 - You need MongoDB support 
@@ -36,10 +34,11 @@ Intro
 
 This distribution includes zero-compilation, object-oriented data and presentation layers together with Bootstrap 3.0 and many themes, 
 supports SQLite, MySQL, and PostgreSQL [with prepared statements through PDO] and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
-[auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing] 
-and PHPTI for simple painless template inhertiance. MongoDB support is included using CodeIgniter active record systax [i.e.: not Idiorm]. 
+[auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing]. 
+MongoDB support is included using standard CodeIgniter active record systax [i.e.: not Idiorm]. 
+
 This distribution stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Idiorm), 
-Paul M. Jones (Savant), Zend(Zend libraries), Adam Shaw (phpti), Alex Bilbie (MongoDB library) and others. 
+Paul M. Jones (Savant), Zend(Zend libraries), Alex Bilbie (MongoDB library) and others. 
 
 Some Useful External Resources
 -----------------
@@ -59,8 +58,6 @@ you may need a JS MVC framework [see the first answer for an excellent introduct
 While Savant is included in this distribution, it is not mandatory to use it for presentation -- CodeIgniter views may be used. 
 The sample code in application/controllers/site.php has examples of CI and Savant views. If used, CodeIgniter views are located 
 in the usual directory. 
-
-<a href="http://phpti.com/">Documentation for [optional] PHPTI Template Inheritance</a>. 
 
 Job queue functionality requires enabling Python and is based on the following projeects: 
 <a href="https://github.com/hussaintamboli/Celery-CI">Celery-CI</a> [housed in /application/libraries]
@@ -92,7 +89,7 @@ described in the Idiorm documentation.
 Sample Code
 -----------
 THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of several forms of usage. There is also a 
-sample controller for job queues in application/controllers/jobq.php. DBscripts/test.sql contains some sample data--enough to run some 
+sample controller for job queues in application/controllers/jobq.php. DBscripts/test.sql contains some sample data--enough to run most  
 [but not all] of the examples.
 
 LICENSE
