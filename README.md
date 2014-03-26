@@ -88,8 +88,8 @@ described in the Idiorm documentation.
 
 Sample Code
 -----------
-THERE IS A SMALL SAMPLE CONTROLLER in application/controllers/site.php including examples of several forms of usage. There is also a 
-sample controller for job queues in application/controllers/jobq.php. DBscripts/test.sql contains some sample data--enough to run most  
+THERE ARE SMALL SAMPLE CONTROLLERS in application/controllers/site.php and examples.php showing several forms of usage. There is also a 
+sample controller for job queues in application/controllers/jobq.php. DBscripts/test.sql contains some sample data--enough to run many   
 [but not all] of the examples.
 
 LICENSE
