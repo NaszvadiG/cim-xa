@@ -8,7 +8,7 @@ class Examples extends MY_Bouncer {
 
 		$this->load->database();
 		$this->load->helper('url');
-		$this->theme = 'datatables';
+		$this->theme = 'flexigrid';
 		$this->load->library('grocery_CRUD');
 	}
 
@@ -123,17 +123,12 @@ class Examples extends MY_Bouncer {
 			$crud->unset_export();
 			$crud->set_subject('Product');
 			$crud->unset_columns('productDescription');
-			$crud->callback_column('buyPrice',array($this,'valueToEuro'));
 
 			$output = $crud->render();
 
 			$this->_example_output($output);
 	}
 
-	public function valueToEuro($value, $row)
-	{
-		return $value.' &euro;';
-	}
 
 	public function film_management()
 	{
