@@ -33,18 +33,14 @@ class Examples extends MY_Bouncer {
 	{
 		try{
 			$crud = new grocery_CRUD();
-
 			$crud->set_table('offices');
 			$crud->set_theme($this->theme);
 			$crud->unset_export();
 			$crud->set_subject('Office');
 			$crud->required_fields('city');
 			$crud->columns('city','country','phone','addressLine1','postalCode');
-
 			$output = $crud->render();
-
 			$this->_example_output($output);
-
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
@@ -53,27 +49,21 @@ class Examples extends MY_Bouncer {
 	public function employees_management()
 	{
 			$crud = new grocery_CRUD();
-
 			$crud->set_table('employees');
 			$crud->set_theme($this->theme);
 			$crud->unset_export();
 			$crud->set_relation('officeCode','offices','city');
 			$crud->display_as('officeCode','Office City');
 			$crud->set_subject('Employee');
-
 			$crud->required_fields('lastName');
-
 			$crud->set_field_upload('file_url','assets/uploads/files');
-
 			$output = $crud->render();
-
 			$this->_example_output($output);
 	}
 
 	public function customers_management()
 	{
 			$crud = new grocery_CRUD();
-
 			$crud->set_table('customers');
 			$crud->set_theme($this->theme);
 			$crud->unset_export();
@@ -84,9 +74,7 @@ class Examples extends MY_Bouncer {
 			$crud->set_subject('Customer');
 			$crud->set_relation('salesRepEmployeeNumber','employees','lastName');
 			$crud->callback_edit_field('customerName',array($this,'edit_field_callback_cust1'));
-
 			$output = $crud->render();
-
 			$this->_example_output($output);
 	}
 	function edit_field_callback_cust1($value, $primary_key)
@@ -98,7 +86,6 @@ class Examples extends MY_Bouncer {
 	public function orders_management()
 	{
 			$crud = new grocery_CRUD();
-
 			$crud->set_relation('customerNumber','customers','customerName');
 			$crud->display_as('customerNumber','Customer');
 			$crud->set_table('orders');
@@ -108,24 +95,19 @@ class Examples extends MY_Bouncer {
 			$crud->unset_add();
 			$crud->unset_delete();
 			if ($this->uri->segment(5) == 1) { $crud->where('orders.customerNumber', $this->uri->segment(4)); }
-
 			$output = $crud->render();
-
 			$this->_example_output($output);
 	}
 
 	public function products_management()
 	{
 			$crud = new grocery_CRUD();
-
 			$crud->set_table('products');
 			$crud->set_theme($this->theme);
 			$crud->unset_export();
 			$crud->set_subject('Product');
 			$crud->unset_columns('productDescription');
-
 			$output = $crud->render();
-
 			$this->_example_output($output);
 	}
 
@@ -133,16 +115,13 @@ class Examples extends MY_Bouncer {
 	public function film_management()
 	{
 		$crud = new grocery_CRUD();
-
 		$crud->set_table('film');
 		$crud->set_theme($this->theme);
 		$crud->unset_export();
 		$crud->set_relation_n_n('actors', 'film_actor', 'actor', 'film_id', 'actor_id', 'fullname','priority');
 		$crud->set_relation_n_n('category', 'film_category', 'category', 'film_id', 'category_id', 'name');
 		$crud->unset_columns('special_features','description','actors');
-
 		$crud->fields('title', 'description', 'actors' ,  'category' ,'release_year', 'rental_duration', 'rental_rate', 'length', 'replacement_cost', 'rating', 'special_features');
-
 		$output = $crud->render();
 
 		$this->_example_output($output);
@@ -152,18 +131,14 @@ class Examples extends MY_Bouncer {
 	{
 		try{
 			$crud = new grocery_CRUD();
-
 			$crud->set_theme('twitter-bootstrap');
 			$crud->set_table('film');
 			$crud->set_relation_n_n('actors', 'film_actor', 'actor', 'film_id', 'actor_id', 'fullname','priority');
 			$crud->set_relation_n_n('category', 'film_category', 'category', 'film_id', 'category_id', 'name');
 			$crud->unset_columns('special_features','description','actors');
-			
 			$crud->fields('title', 'description', 'actors' ,  'category' ,'release_year', 'rental_duration', 'rental_rate', 'length', 'replacement_cost', 'rating', 'special_features');
-
 			$output = $crud->render();
 			$this->_example_output($output);
-
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
