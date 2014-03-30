@@ -14,26 +14,26 @@ public function index() // LINKS
 	$this->load->view('links');
 }
  
-public function songs1() // CONTROLLER FUNCTION USING IDIORM + SAVANT VIEW
+public function songs1() 
 {
 	$this->load->model('songs');
-	$this->songs->i_getS()->display('songs1.php'); // SAVANT VIEW
+	$this->songs->i_getS()->display('songs1.php'); // SAVANT 
 }     	
 
-public function songs2() // CONTROLLER FUNCTION USING IDIORM + CODEIGNITER VIEW
+public function songs2() 
+{
+	$this->load->model('songs');
+	$this->load->view('songs2', $this->songs->i_get());
+}
+
+public function songs2c() 
 {
 	$this->load->model('songs');
 	$this->load->view('songs2', $this->songs->ci_get());
+
 }
 
-public function songs2c() // CONTROLLER FUNCTION USING IDIORM + CODEIGNITER VIEW
-{
-	$this->load->model('songs');
-	$data['songs'] = $this->songs->ci_get(); 
-	$this->load->view('songs2', $data);
-}
-
-public function songs3() // CRUD FUNCTION USING CODEIGNITER'S MYSQLI DATABASE INTERFACE
+public function songs3() 
 {
 	$this->load->database();
 	$this->load->library('grocery_CRUD');
