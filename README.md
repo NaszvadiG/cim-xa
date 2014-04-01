@@ -35,7 +35,7 @@ Intro
 This distribution includes zero-compilation, object-oriented data and presentation layers together with Bootstrap 3.0 and many themes, 
 supports prepared statements through PHPDataObjects and also includes the Grocery [CRUD], PHPExcel and Zend libraries 
 [auth, mail, permissions, etc., loadable and usable as if they were CodeIgniter libraries], as well as ChromePHP [for testing]. 
-MongoDB support is included using a CodeIgniter active record style systax [i.e.: not Idiorm]. 
+MongoDB support is included using a CodeIgniter active record style syntax [i.e.: not Idiorm]. 
 
 This distribution stands on the shoulders of some PHP giants including Ellis Labs (CodeIgniter), Jamie Matthews (Idiorm), 
 Paul M. Jones (Savant), Zend(Zend libraries), Alex Bilbie (MongoDB library) and others. 
