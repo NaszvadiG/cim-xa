@@ -7,7 +7,6 @@ class Examples extends MY_Bouncer {
 		parent::__construct();
 
 		$this->load->database();
-		$this->load->helper('url');
 		$this->theme = 'flexigrid';
 		$this->load->library('grocery_CRUD');
 	}
