@@ -3,17 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-<?php 
-foreach($css_files as $file): ?>
-	<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
-<?php endforeach; ?>
-<?php foreach($js_files as $file): ?>
-	<script src="<?php echo $file; ?>"></script>
-<?php endforeach; ?>
+<?php foreach($css_files as $file): ?><link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" /><?php endforeach; ?>
+<?php foreach($js_files as $file): ?><script src="<?php echo $file; ?>"></script><?php endforeach; ?>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -32,10 +26,8 @@ foreach($css_files as $file): ?>
 	</div>
 </div> 
 <div style='height:50px;'></div>  
-
 <div>
 	<?php echo $output; //THIS DISPLAYS THE CRUD ?>
 </div>
-
 </body>
 </html>
