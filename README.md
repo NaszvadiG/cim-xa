@@ -51,8 +51,8 @@ Some Useful External Resources
 <a href=http://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background?rq=1">Why 
 you may need a JS MVC framework [see the first answer for an excellent introduction]</a>
 
-<a href="http://avro.apache.org/docs/current/index.html">Apache Avro</a>
-
+<a href="http://avro.apache.org/docs/current/index.html">Apache Avro</a> see also 
+<a href="http://files.meetup.com/1634302/CHUG-ApacheAvro.pdf">CHUG-ApacheAvro</a> 
 
 <a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a>
 
