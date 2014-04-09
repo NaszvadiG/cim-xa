@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=9" >
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
 <?php foreach($css_files as $file): ?><link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" /><?php endforeach; ?>
 <?php foreach($js_files as $file): ?><script src="<?php echo $file; ?>"></script><?php endforeach; ?>

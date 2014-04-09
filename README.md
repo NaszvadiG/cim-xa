@@ -8,6 +8,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need easy-to-use support for SQL prepared statements [Idiorm]
 - You need or simply prefer a more mainstream ORM approach {Idiorm]
 - You need a fully RESTful server implementation capability
+- You need serialization capability [Apache Avro]
 - You need to integrate with JavaScript* or a JS MVC framework**
 - You need views/templates that auto-escape output [Savant3]
 - You need login/authorization [a provided CI example or Zend]
@@ -49,6 +50,9 @@ Some Useful External Resources
 
 <a href=http://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background?rq=1">Why 
 you may need a JS MVC framework [see the first answer for an excellent introduction]</a>
+
+<a href="http://avro.apache.org/docs/current/index.html">Apache Avro</a>
+
 
 <a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a>
 
