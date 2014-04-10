@@ -6,28 +6,19 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <title></title>
-
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
 <?php foreach($css_files as $file): ?> <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" /> <?php endforeach; ?>
-
 <?php foreach($js_files as $file): ?> <script src="<?php echo $file; ?>"></script> <?php endforeach; ?>
-
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
 <link rel="stylesheet" href="<?php echo site_url('assets/css/campaign.css')?>">
-
-<style>
-body {
-background-color: #CCC;
-}
-</style>
 </head>
 
 <body>
 
 <div class="row">
+<div style="margin: 0 15px;">
 <?php include 'top.php';?> 
+</div>
 </div>
 
 <div class="row">
@@ -40,7 +31,9 @@ background-color: #CCC;
 </div>
 
 <div class="row">
+<div style="margin: 0 15px;">
 <?php include 'bottom.php';?>
+</div>
 </div>
 
 </body>
