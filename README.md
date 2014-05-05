@@ -11,7 +11,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need serialization capability [Apache Avro]
 - You need to integrate with JavaScript* or a JS MVC framework**
 - You need views/templates that auto-escape output [Savant3]
-- You need login/authorization [a provided CI example or Zend]
+- You need login/authorization [a provided CI example, hybridauth, or Zend]
 - You need a very quick yet theme-able CRUD constuction tool [Grocery]
 - You need MongoDB support 
 - You need strong Excel data support [PHPExcel]
