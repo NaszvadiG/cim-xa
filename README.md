@@ -7,7 +7,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need to extend the routing feature set [Cartographer]
 - You need PDO for cross-DBMS compatibility [Idiorm] 
 - You need easy-to-use support for SQL prepared statements [Idiorm]
-- You need or simply prefer a more mainstream ORM approach {Idiorm]
+- You need or simply prefer a more mainstream ORM approach [Idiorm]
 - You need a fully RESTful server implementation capability
 - You need serialization capability [Apache Avro]
 - You need to integrate with JavaScript(1) or a JS MVC framework(2)
@@ -17,10 +17,10 @@ You may find this distribution helpful if your situation includes one or more of
 - You need MongoDB support 
 - You need strong Excel data support [PHPExcel]
 - You need a job queue facility [Celery + AmqPHP]
-- You need debugging via Chrome Console {PHPChrome]
+- You need debugging via Chrome Console [PHPChrome]
 - You need a cURL library [PHPcURL]
 - You need to send HTML email [Zend]
-- You need to format HTML email or other non-browser views [Savant](3)
+- You need to format HTML email or other non-browser views [Savant] (3)
 
  (1) see <a href="https://github.com/sfthurber/CodeIgniter-AngularJS-App">sample angularjs/CodeIgniter-AngularJS application</a>; see also 
  <a href="http://www.ng-newsletter.com/posts/angular-on-mobile.html">The Definitive Guide to Angular on Mobile</a>. 
