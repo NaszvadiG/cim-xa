@@ -10,7 +10,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need or simply prefer a more mainstream ORM approach {Idiorm]
 - You need a fully RESTful server implementation capability
 - You need serialization capability [Apache Avro]
-- You need to integrate with JavaScript* or a JS MVC framework**
+- You need to integrate with JavaScript(1) or a JS MVC framework(2)
 - You need views/templates that auto-escape output [Savant3]
 - You need login/authorization [a provided CI example, hybridauth, or Zend]
 - You need a very quick yet theme-able CRUD constuction tool [Grocery]
@@ -20,16 +20,16 @@ You may find this distribution helpful if your situation includes one or more of
 - You need debugging via Chrome Console {PHPChrome]
 - You need a cURL library [PHPcURL]
 - You need to send HTML email [Zend]
-- You need to format HTML email or other non-browser views [Savant]***
+- You need to format HTML email or other non-browser views [Savant](3)
 
- *see <a href="https://github.com/sfthurber/CodeIgniter-AngularJS-App">sample angularjs/CodeIgniter-AngularJS application</a>; see also 
+ (1) see <a href="https://github.com/sfthurber/CodeIgniter-AngularJS-App">sample angularjs/CodeIgniter-AngularJS application</a>; see also 
  <a href="http://www.ng-newsletter.com/posts/angular-on-mobile.html">The Definitive Guide to Angular on Mobile</a>. 
 
- **ie: Ember loads and instantiates Javascript controllers based upon which CI controller is active and 
+ (2) ie: Ember loads and instantiates Javascript controllers based upon which CI controller is active and 
 passes information from PHP to your Javascript without printing data into the DOM. From there you 
 can also launch into a larger JS framework such as Angular.
 
- ***If you also need a css inliner, see: beaker.mailchimp.com/inline-css
+ (3) If you also need a css inliner, see: beaker.mailchimp.com/inline-css
 
 Intro
 -----------------
