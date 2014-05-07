@@ -20,6 +20,7 @@ You may find this distribution helpful if your situation includes one or more of
 - You need debugging via Chrome Console (PHPChrome)
 - You need a cURL library (PHPcURL)
 - You need to send HTML email (Zend) or format HTML email (Savant)(note 3)
+- 
 
 
  (1) see <a href="https://github.com/sfthurber/CodeIgniter-AngularJS-App">sample angularjs/CodeIgniter-AngularJS application</a>; see also 
