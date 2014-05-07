@@ -4,6 +4,7 @@
 A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework (Version 2.1.4) and many extensions. 
 You may find this distribution helpful if your situation includes one or more of the following:
 
+- You need to extend the routing feature set [Cartographer]
 - You need PDO for cross-DBMS compatibility [Idiorm] 
 - You need easy-to-use support for SQL prepared statements [Idiorm]
 - You need or simply prefer a more mainstream ORM approach {Idiorm]
@@ -45,6 +46,8 @@ Some Useful External Resources
 -----------------
 
 <a href="http://ellislab.com/codeigniter/user-guide/toc.html">Documentation for CodeIgniter</a>
+
+<a href="https://github.com/lonnieezell/cartographer">Cartographer on Github</a>
 
 <a href="https://github.com/philsturgeon/codeigniter-restserver">RESTful Server Tutorial for CodeIgniter by Phil Sturgeon</a>
 
