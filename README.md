@@ -19,8 +19,8 @@ You may find this distribution helpful if your situation includes one or more of
 - You need a job queue facility [Celery + AmqPHP]
 - You need debugging via Chrome Console [PHPChrome]
 - You need a cURL library [PHPcURL]
-- You need to send HTML email [Zend]
-- You need to format HTML email or other non-browser views [Savant] (3)
+- You need to send HTML email [Zend] or format HTML email [Savant] (3)
+
 
  (1) see <a href="https://github.com/sfthurber/CodeIgniter-AngularJS-App">sample angularjs/CodeIgniter-AngularJS application</a>; see also 
  <a href="http://www.ng-newsletter.com/posts/angular-on-mobile.html">The Definitive Guide to Angular on Mobile</a>. 
