@@ -59,7 +59,7 @@ you may need a JS MVC framework [see the first answer for an excellent introduct
 
 <a href="http://idiorm.readthedocs.org/en/latest/">Documentation for Idiorm Object Relational Mapper</a>
 
-<a href="http://phpsavant.com/docs/">; and documentation for [optional] Savant Templating</a>; see also: 
+<a href="http://phpsavant.com/docs/">; and documentation for [optional] Savant Templating</a> see also: 
 <a href="http://devzone.zend.com/1542/creating-modular-template-based-interfaces-with-savant/">this article</a>. 
 
 While Savant is included in this distribution, it is not mandatory to use it for presentation -- CodeIgniter views may be used. 
