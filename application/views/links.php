@@ -22,8 +22,6 @@
 			<li><a href="<?=site_url()?>site/songs1">Songs--Idiorm model with a trivial Savant view</a></li>
 			<li><a href="<?=site_url()?>site/songs2">Songs--Idiorm model with a trivial CI view</a></li>
 			<li><a href="<?=site_url()?>site/songs2c">Songs--CI model with a trivial CI view</a></li>
-			<li><a href="<?=site_url()?>site/songs3">Songs--Grocery CRUD</a></li>
-			<li><a href="<?=site_url()?>examples">Gorcery CRUD demos menu</a></li>
 		</ul>
 	</div>
 </div> 
