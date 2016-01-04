@@ -1,7 +1,7 @@
 *CIM-ACCELERANT (A.K.A. CIM-XA)*
 ==============================
 
-A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework (Version 2.1.4) and many extensions. 
+A distribution, by Titanium Opensystems, l.c., including the popular CodeIgniter framework (Version 2.x) and many extensions. 
 You may find this distribution helpful if your situation includes one or more of the following:
 
 - You need to extend the routing feature set (Cartographer)
