@@ -13,7 +13,6 @@ You may find this distribution helpful if your situation includes one or more of
 - You need to integrate with JavaScript(note 1) or a JS MVC framework(note 2)
 - You need views/templates that auto-escape output (Savant3)
 - You need login/authorization )a provided CI example, hybridauth, or Zend)
-- You need a very quick yet theme-able CRUD constuction tool (Grocery)
 - You need MongoDB support 
 - You need strong Excel data support (PHPExcel)
 - You need a job queue facility (Celery + AmqPHP)
